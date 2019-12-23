@@ -46,7 +46,7 @@ class TrappingRainWaterTimeAndSpaceOptimized {
     /* Driver program to test above function */
     public static void main(String[] args) 
     { 
-        int arr[] = {7,4,0,9};
+        int arr[] = {1,8,6,2,5,4,8,3,7};
         int n = arr.length; 
   
         System.out.println("Maximum water that "
