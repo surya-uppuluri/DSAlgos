@@ -1,3 +1,4 @@
+<img src="../../../../../resources/arrays.png" alt="arrays" width="200" height="100"/>
 ## ARRAYS
 
 
