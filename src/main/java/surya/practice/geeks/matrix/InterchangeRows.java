@@ -31,10 +31,10 @@ class InterchangeRows {
 /*This is a function problem.You only need to complete the function given below*/
 class RowInterchange {
     //Complete this function
-    static void interchangeRows(int n1, int m1, int[][] a) {
-        int fp = 0, sp = n1 - 1;
+    static void interchangeRows(int row, int column, int[][] a) {
+        int fp = 0, sp = row - 1;
         while (fp < sp) {
-            for (int col = 0; col < m1; col++) {
+            for (int col = 0; col < column; col++) {
                 int x = a[fp][col];
                 int y = a[sp][col];
                 x = x ^ y;
