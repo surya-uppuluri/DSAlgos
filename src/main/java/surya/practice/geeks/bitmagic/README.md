@@ -1,4 +1,4 @@
-## ARRAYS
+## Bit Manipulation
 
 
 
