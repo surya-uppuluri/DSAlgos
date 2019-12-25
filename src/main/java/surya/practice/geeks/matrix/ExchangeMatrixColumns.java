@@ -18,7 +18,7 @@ class ExchangeMatrixColumns {
                 for (int j = 0; j < m1; j++)
                     arr1[i][j] = sc.nextInt();
             }
-            new ModifyMat().exchangeColumns(n1, m1, arr1);
+            new ExchangeColumns().exchangeColumns(n1, m1, arr1);
             System.out.println();
         }
     }
@@ -27,7 +27,7 @@ class ExchangeMatrixColumns {
 
 /*This is a function problem.You only need to complete the function given below*/
 //User function Template for Java
-class ModifyMat {
+class ExchangeColumns {
     //Complete this function
     static void exchangeColumns(int n1, int m1, int[][] arr) {
         for (int i = 0; i < n1; i++) {
