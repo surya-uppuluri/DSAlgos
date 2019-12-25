@@ -4,6 +4,7 @@ This is a repo of my solutions/code for the problems that I practise for masteri
 My source of problemset is geeksforgeeks/leetCode.
 
 |S.No|Topic|IsComplete?|
+|---|---|---|
 |1|[Arrays](src/main/java/surya/practice/geeks/arrays/README.md)|False|
 |2|[BitMagic](src/main/java/surya/practice/geeks/bitmagic/README.md)|False|
 |3|[Matrix](src/main/java/surya/practice/geeks/matrix/README.md)|False|
