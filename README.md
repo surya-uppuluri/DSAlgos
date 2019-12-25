@@ -1,5 +1,4 @@
-![DSA.png](src/main/resources/DSA.png)
-
+![dsa](src/main/resources/dsa.png)
 # Data Structures and Algorithms
 
 **This is a repo of my solutions/code for the problems that I practise for mastering Data Structures and Algorithms.**
