@@ -1,5 +1,26 @@
-# dsa2
-DSA2 Online is a course on data structures and algorithms by GeeksForGeeks. In this project, I commit the solutions/code that I write for the course's problem set.
+# DSAlgo
+This is a repo of my solutions/code for the problems that I practise from geeksforgeeks/leetCode.
+
+|S.No|Topic|IsComplete?|
+|1|[Arrays](src/main/java/surya/practice/geeks/arrays/README.md)|False|
+|2|[BitMagic](src/main/java/surya/practice/geeks/bitmagic/README.pdf)|False|
+|3|[Matrix](src/main/java/surya/practice/geeks/matrix/README.md)|False|
+|4|[Searching]()|False|
+|5|[Sorting]()| |
+|6|[Hashing]()| |
+|7|[Strings]()| |
+|8|[LinkedList]()| False|
+|9|[Stack]()||
+|10|[Queue]()|
+|11|[Tree]()|
+|12|[BST]()|
+|13|[Heap]()|
+|14|[Graph]()|
+|15|[Greedy]()|
+|16|[BackTracking]()|
+|17|[DP(Dynamic Programming)]()|
+|18|[Trie]()|
+|19|[SegmentTree]()|
+|20|[DisjointSet]()|
 
 
-## Each topic contains a README.md of its own.
