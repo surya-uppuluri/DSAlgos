@@ -5,11 +5,14 @@
 
 _My source of problem-set is geeksforgeeks and leetCode._
 
-### Prelude
+## Prelude
 
 [Time and Space Complexity](src/main/java/surya/practice/meta/README.md)
 
-|S.No|Topic|IsComplete?|  
+
+## List of Topics
+
+|S.No|Topic|IsComplete?|
 |---|---|---|
 |1|[Arrays](src/main/java/surya/practice/geeks/arrays/README.md)|False|
 |2|[BitMagic](src/main/java/surya/practice/geeks/bitmagic/README.md)|False|
@@ -18,8 +21,8 @@ _My source of problem-set is geeksforgeeks and leetCode._
 |5|[Sorting]()| |  
 |6|[Hashing]()| |
 |7|[Strings]()|  |  
- |8|[LinkedList]()| False| |  
- |9|[Stack]()| |
+|8|[LinkedList]()| False| |  
+|9|[Stack]()| |
 |10|[Queue]()| |  
 |11|[Tree]()| |  
 |12|[BST]()|  |  
