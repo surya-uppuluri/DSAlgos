@@ -5,10 +5,12 @@
 
 _My source of problem-set is geeksforgeeks and leetCode._
 
-### Prelude
+## Prelude
 
 [Time and Space Complexity](src/main/java/surya/practice/meta/README.md)
 
+
+## List of Topics
 |S.No|Topic|IsComplete?|  
 |---|---|---|
 |1|[Arrays](src/main/java/surya/practice/geeks/arrays/README.md)|False|
