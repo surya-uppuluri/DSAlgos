@@ -5,7 +5,7 @@
 
 _My source of problem-set is geeksforgeeks and leetCode._
 
-## Prelude
+### Prelude
 
 [Time and Space Complexity](src/main/java/surya/practice/meta/README.md)
 
@@ -21,8 +21,8 @@ _My source of problem-set is geeksforgeeks and leetCode._
 |5|[Sorting]()| |  
 |6|[Hashing]()| |
 |7|[Strings]()|  |  
-|8|[LinkedList]()| False| |  
-|9|[Stack]()| |
+ |8|[LinkedList]()| False| |  
+ |9|[Stack]()| |
 |10|[Queue]()| |  
 |11|[Tree]()| |  
 |12|[BST]()|  |  
