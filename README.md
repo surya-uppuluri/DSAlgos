@@ -18,8 +18,9 @@ My source of problemset is geeksforgeeks/leetCode.
  |8|[LinkedList]()| False| |  
  |9|[Stack]()| |
 |10|[Queue]()| |  
-|11|[Tree]()| | |12|[BST]()|  
-| |13|[Heap]()| |
+|11|[Tree]()| |  
+|12|[BST]()|  |  
+|13|[Heap]()| |
 |14|[Graph]()| |  
 |15|[Greedy]()| |  
 |16|[BackTracking]()| |
