@@ -1,4 +1,4 @@
-package surya.practice.leet;
+package surya.practice.leet.problemset;
 
 public class LC11_ContainerWithMostWater {
 

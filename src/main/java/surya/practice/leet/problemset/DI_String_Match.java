@@ -1,4 +1,4 @@
-package surya.practice.leet;
+package surya.practice.leet.problemset;
 
 import com.eclipsesource.json.JsonArray;
 
