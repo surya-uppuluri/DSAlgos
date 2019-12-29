@@ -28,18 +28,18 @@ class Missing{
     static int missingNumber(int arr[], int size)
     {
      HashMap<Integer, Integer> pos = new HashMap<>();
-     int currmax =0;
+     int currMax =0;
      for(int num: arr)
      {
          if(num>=0){
          pos.put(num,1);
-         if(num>currmax) currmax=num;
+         if(num>currMax) currMax=num;
              
          }
      }
      
      
-     for(int i=0; i<currmax;i++)
+     for(int i=0; i<currMax;i++)
      {
          if(pos.getOrDefault(i,0)==0)
          return i;
