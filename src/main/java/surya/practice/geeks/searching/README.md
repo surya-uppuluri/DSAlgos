@@ -2,7 +2,6 @@
 
 ## Searching
 
-WIP
 
 
  |S.No| Problem | Difficulty | Solved | NeedRevision?  | Comments/Algorithm used  |
