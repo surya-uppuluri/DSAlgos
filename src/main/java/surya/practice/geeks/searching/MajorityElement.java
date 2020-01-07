@@ -25,6 +25,7 @@ class MajorityElement {
 /*This is a function problem.You only need to complete the function given below*/
 //User function Template for Java
 class MajorityBruteForce {
+
     static int majorityElement(int a[], int size) {
         int res = -1;
         for (int num : a) {
