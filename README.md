@@ -1,6 +1,6 @@
 ![dsa](src/main/resources/dsa.png)
 
-![License](https://img.shields.io/badge/license-Apache_2.0-blue.svg) [![Build Status](https://travis-ci.org/fishercoder1534/Leetcode.svg?branch=master)](https://travis-ci.org/fishercoder1534/Leetcode) ![Language](https://img.shields.io/badge/language-Java%20%2F%20MySQL%20%2F%20Bash-blue.svg)
+![License](https://img.shields.io/badge/license-Apache_2.0-blue.svg) [![Build Status](https://api.travis-ci.org/surya-uppuluri/DSAlgos.svg?branch=master)](https://api.travis-ci.org/surya-uppuluri/DSAlgos) ![Language](https://img.shields.io/badge/language-Java%20%2F%20Oracle%20%2F%20Bash-blue.svg)
 
 # Data Structures and Algorithms
 
