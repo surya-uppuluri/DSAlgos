@@ -1,4 +1,7 @@
-![dsa](src/main/resources/dsa.png) [![License](https://img.shields.io/badge/license-Apache_2.0-blue.svg)] [![Build Status](https://travis-ci.org/fishercoder1534/Leetcode.svg?branch=master)](https://travis-ci.org/fishercoder1534/Leetcode) ![Language](https://img.shields.io/badge/language-Java%20%2F%20MySQL%20%2F%20Bash-blue.svg)
+![dsa](src/main/resources/dsa.png)
+
+![License](https://img.shields.io/badge/license-Apache_2.0-blue.svg) [![Build Status](https://travis-ci.org/fishercoder1534/Leetcode.svg?branch=master)](https://travis-ci.org/fishercoder1534/Leetcode) ![Language](https://img.shields.io/badge/language-Java%20%2F%20MySQL%20%2F%20Bash-blue.svg)
+
 # Data Structures and Algorithms
 
 **This is a repo of my solutions/code for the problems that I practise for mastering Data Structures and Algorithms.**
