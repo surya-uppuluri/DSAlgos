@@ -105,8 +105,8 @@ public class KthSmallestElement {
          * 1. Sort the array in non-decreasing order using BubbleSort 
          * 2. Return arr[nthElem]
          * =========================
-         * Space Complexity - O(n^2)
-         * Time Complexity - O(1)
+         * Space Complexity - O(1)
+         * Time Complexity - O(n^2)
          * ========================
          */
         //@formatter:on
