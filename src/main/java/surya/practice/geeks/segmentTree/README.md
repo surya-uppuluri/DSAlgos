@@ -2,7 +2,7 @@
 
 
 
- |S.No| Problem | Difficulty | Solved | NeedRevision?  | Comments/Algorithm used  |
+ |S.No| Problem | Difficulty | Solved | NeedRevision?  | Comments/Algorithms/Tags  |
  |---|---|---|---|---|---|
   | 1 | | | | | |
   | 2| | | | | |

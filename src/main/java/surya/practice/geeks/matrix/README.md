@@ -10,7 +10,7 @@
 2. Determinant of matrix
 3. Make matrix Boolean
 
- |S.No| Problem | Difficulty | Solved | NeedRevision?  | Comments/Algorithm used  |
+ |S.No| Problem | Difficulty | Solved | NeedRevision?  | Comments/Algorithms/Tags  |
  |---|---|---|---|---|---|
   |1| [AddMatrices](AddMatrices.java) |  Easy |Yes | No
   |2|[Spiral traversal]()|  Hard | No | Yes
