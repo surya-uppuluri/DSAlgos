@@ -4,7 +4,6 @@ package surya.practice.geeks.searching;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Random;
 
 //@formatter:off
 
@@ -87,61 +86,13 @@ public class KthSmallestElement {
      */
     //@formatter:on
     private static int findKthSmallestQuickSelect(int[] arr, int nthElem) {
-        return kthSmallest(arr, 0, arr.length, nthElem);
+        return 0;
+        //TODO after sorting
     }
-
-    static int kthSmallest(int arr[], int l, int r, int k) {
-        // If k is smaller than number of elements in array
-        if (k > 0 && k <= r - l + 1) {
-
-            // partitioning the array along the pivot
-            int pos = randomPartition(arr, l, r);
-
-
-            // check if current element gives you the kth smallest element
-            if (pos - l == k - 1)
-                return arr[pos];
-
-            // else recurse for the left and right half accordingly
-            if (pos - l > k - 1)
-                return kthSmallest(arr, l, pos - 1, k);
-            return kthSmallest(arr, pos + 1, r, k - pos + l - 1);
-        }
-
-        return Integer.MAX_VALUE;
-    }
-
-
-    static int partition(int arr[], int l, int r) {
-        int x = arr[r], i = l;
-        for (int j = l; j <= r - 1; j++) {
-            if (arr[j] <= x) {
-                int temp = arr[j];
-                arr[j] = arr[i];
-                arr[i] = temp;
-                i++;
-            }
-        }
-        int temp = arr[r];
-        arr[r] = arr[i];
-        arr[i] = temp;
-        return i;
-    }
-
-    // Function to partition the array along the random pivot
-    static int randomPartition(int arr[], int l, int r) {
-        Random rand = new Random();
-        int n = r - l + 1;
-        int pivot = rand.nextInt(n);
-        int temp = arr[r];
-        arr[r] = arr[l + pivot];
-        arr[l + pivot] = temp;
-        return partition(arr, l, r);
-    }
-
 
     private static int findKthSmallestMaxHeap(int[] arr, int nthElem) {
         return 0;
+        //TODO after heaps
     }
 
     private static int findKthSmallestBruteForce(int[] arr, int nthElem) {
@@ -153,6 +104,10 @@ public class KthSmallestElement {
          * ----------
          * 1. Sort the array in non-decreasing order using BubbleSort 
          * 2. Return arr[nthElem]
+         * =========================
+         * Space Complexity - O(n^2)
+         * Time Complexity - O(1)
+         * ========================
          */
         //@formatter:on
 
