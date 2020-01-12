@@ -111,6 +111,11 @@ public class KthSmallestElement {
          */
         //@formatter:on
 
+        bubbleSort(arr);
+        return arr[nthElem - 1];
+    }
+
+    private static void bubbleSort(int[] arr) {
         int length = arr.length;
         for (int i = 0; i < length - 1; i++) {
             for (int j = 0; j < length - i - 1; j++) {
@@ -121,6 +126,5 @@ public class KthSmallestElement {
                 }
             }
         }
-        return arr[nthElem - 1];
     }
 }
