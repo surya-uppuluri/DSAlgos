@@ -4,11 +4,24 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+//@formatter:off
+/**
+ * ----------
+ * ALGORITHM
+ * ----------
+ * Iterate from the end of array
+ * If digit is 9, mark it 0 and keep going till you find non 9 digit
+ * Increment it and return.
+ * =========================
+ * Space Complexity - O(n)
+ * Time Complexity - O(n)
+ * =========================
+ */
+//@formatter:on
+//input:[1,2,3,4,9]
 class PlusOne {
     public int[] plusOne(int[] digits) {
-        //Iterate from the end of array
-        //If digit is 9, mark it 0 and keep going till you find non 9 digit
-        //Increment it and return.
+
         for (int i = digits.length - 1; i >= 0; i--) {
             if (digits[i] < 9) {
                 digits[i]++;

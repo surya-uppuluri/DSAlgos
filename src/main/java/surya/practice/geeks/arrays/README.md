@@ -4,20 +4,20 @@
 
 
 
- |S.No| Problem | Difficulty | Solved | NeedRevision?  | Comments/Algorithms/Tags  |
- |---|---|---|---|---|---|
-  | 1 | | | | | |
-  | 2| | | | | |
-  | 3 | | | | | |
-  | 4 | | | | | |
-  | 5 | | | | | |
-  | 6 | | | | | |
-  | 7 | | | | | |
-  | 8 | | | | | |
-  | 9 | | | | | |
-  | 10 | | | | | |
-  | 11 | | | | | |
-  | 12 | | | | | |
-  | 13 | | | | | |
-  | 14 | | | | | |
-  | 15 | | | | | |
+| S.No | Problem                                               | Difficulty | Solved | NeedRevision? | Comments/Algorithms/Tags                                                                                                                                                                                                                                                                 |
+|:-----|:------------------------------------------------------|:-----------|:-------|:--------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1    | [PlusOne.java: Lines 8-43](PlusOneDriver.java#L8-L43) | Medium     | Yes    | Yes           | Thoughtful question. You'll think of forming the number out of array elements increment by 1. Many corner cases like (9,8,7,6,5,4,3,2,1) won't let you do it in int or long. You'll have to come up with a good logic which is doing addition in place to the digit and break when done. |
+| 2    |                                                       |            |        |               |                                                                                                                                                                                                                                                                                          |
+| 3    |                                                       |            |        |               |                                                                                                                                                                                                                                                                                          |
+| 4    |                                                       |            |        |               |                                                                                                                                                                                                                                                                                          |
+| 5    |                                                       |            |        |               |                                                                                                                                                                                                                                                                                          |
+| 6    |                                                       |            |        |               |                                                                                                                                                                                                                                                                                          |
+| 7    |                                                       |            |        |               |                                                                                                                                                                                                                                                                                          |
+| 8    |                                                       |            |        |               |                                                                                                                                                                                                                                                                                          |
+| 9    |                                                       |            |        |               |                                                                                                                                                                                                                                                                                          |
+| 10   |                                                       |            |        |               |                                                                                                                                                                                                                                                                                          |
+| 11   |                                                       |            |        |               |                                                                                                                                                                                                                                                                                          |
+| 12   |                                                       |            |        |               |                                                                                                                                                                                                                                                                                          |
+| 13   |                                                       |            |        |               |                                                                                                                                                                                                                                                                                          |
+| 14   |                                                       |            |        |               |                                                                                                                                                                                                                                                                                          |
+| 15   |                                                       |            |        |               |                                                                                                                                                                                                                                                                                          |
