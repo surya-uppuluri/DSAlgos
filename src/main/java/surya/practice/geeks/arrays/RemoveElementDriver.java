@@ -45,7 +45,7 @@ class RemoveElement {
      * =========================
      */
     //@formatter:on
-    public int removeElement(int[] nums, int val) {
+    public int removeElementBruteForce(int[] nums, int val) {
 
 
         int res = 0;
@@ -68,6 +68,34 @@ class RemoveElement {
         }
         return res;
     }
+
+
+    /* -----------------
+     * ALGORITHM
+     * ----------
+     * 1. Upon finding an element, swap it!
+     * 2. Make use of length index as 2nd pointer rather than looping another for loop for index
+     * 3. Use length of index and reduce the counter for every swap performed
+     * =========================
+     * Space Complexity - O(1)
+     * Time Complexity - O(n)
+     * =========================
+     */
+//@formatter:on
+    public int removeElementOptimized(int[] nums, int val) {
+        if (nums.length == 0) return 0;
+        int i = nums.length - 1;
+        int count = nums.length;
+        for (int j = nums.length - 1; j >= 0; j--) {
+            if(nums[j] == val){
+                nums[j] = nums[i];
+                count--;
+                i--;
+            }
+        }
+
+        return count;
+}
 }
 
 public class RemoveElementDriver {
@@ -112,10 +140,14 @@ public class RemoveElementDriver {
             line = in.readLine();
             int val = Integer.parseInt(line);
 
-            int ret = new RemoveElement().removeElement(nums, val);
+/*            int ret = new RemoveElement().removeElementBruteForce(nums, val);
             String out = integerArrayToString(nums, ret);
+            System.out.print(out);*/
 
-            System.out.print(out);
+            int ret2 = new RemoveElement().removeElementOptimized(nums, val);
+            String out2 = integerArrayToString(nums, ret2);
+            System.out.print(out2);
+
         }
     }
 }
