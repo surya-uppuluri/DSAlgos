@@ -1,6 +1,8 @@
 ## Heap
 
-## Theory Min Heap
+## Theory
+
+[Min Heap](MinHeap.MD)
 
  |S.No| Problem | Difficulty | Solved | NeedRevision?  | Comments/Algorithms/Tags  |
  |---|---|---|---|---|---|

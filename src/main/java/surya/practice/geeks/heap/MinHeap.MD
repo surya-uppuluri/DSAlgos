@@ -1,6 +1,6 @@
 ## Min Heap
 
-1. A variation of [Complete Binary Tree](../tree/TypesOfBinaryTrees.MD#L62) in which the value in each internal node <= values in the children of that node.
+1. A variation of [Complete Binary Tree](../tree/TypesOfBinaryTrees.MD) in which the value in each internal node <= values in the children of that node.
 2. When represented as an array, if a node is stored a index k, then its left child is stored at index 2k + 1 and its right child at index 2k + 2.
 
 ### Example1:
