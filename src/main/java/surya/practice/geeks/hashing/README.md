@@ -1,5 +1,6 @@
 ## Hashing
 
+* [Notes on Theory of Hashing](Hashing_Theory.pdf)
 
 
  |S.No| Problem | Difficulty | Solved | NeedRevision?  | Comments/Algorithms/Tags  |
