@@ -16,14 +16,14 @@ _My source of problem-set is geeksforgeeks and leetCode._
 
 ## List of Topics
 
-| S.No | Topic                                                                     | Mastered?      |    |
+| S.No | Topic                                                                     | Status?      |    |
 |:-----|:--------------------------------------------------------------------------|:---------------|:---|
-| 1    | [Arrays](src/main/java/surya/practice/geeks/arrays/README.md)             | True Partially |    |
-| 2    | [BitMagic](src/main/java/surya/practice/geeks/bitmagic/README.md)         | Almost         |    |
-| 3    | [Matrix](src/main/java/surya/practice/geeks/matrix/README.md)             | No             |    |
+| 1    | [Arrays](src/main/java/surya/practice/geeks/arrays/README.md)             | It never ends! |    |
+| 2    | [BitMagic](src/main/java/surya/practice/geeks/bitmagic/README.md)         | Almost Complete        |    |
+| 3    | [Matrix](src/main/java/surya/practice/geeks/matrix/README.md)             | Still some to solve             |    |
 | 4    | [Searching](src/main/java/surya/practice/geeks/searching/README.md)       | WIP            |    |
-| 5    | [Sorting](src/main/java/surya/practice/geeks/sorting/README.md)           |                |    |
-| 6    | [Hashing](src/main/java/surya/practice/geeks/hashing/README.md)           |                |    |
+| 5    | [Sorting](src/main/java/surya/practice/geeks/sorting/README.md)           | Delayed             |    |
+| 6    | [Hashing](src/main/java/surya/practice/geeks/hashing/README.md)           | WIP            |    |
 | 7    | [Strings](src/main/java/surya/practice/geeks/strings/README.md)           |                |    |
 | 8    | [LinkedList](src/main/java/surya/practice/geeks/linkedList/README.md)     |           |    |
 | 9    | [Stack](src/main/java/surya/practice/geeks/stack/README.md)               |                |    |
@@ -36,8 +36,7 @@ _My source of problem-set is geeksforgeeks and leetCode._
 | 16   | [BackTracking](src/main/java/surya/practice/geeks/backtracking/README.md) |                |    |
 | 17   | [DP](src/main/java/surya/practice/geeks/dp/README.md)                     |                |    |
 | 18   | [Trie](src/main/java/surya/practice/geeks/trie/README.md)                 |                |    |
-| 19   | [SegmentTree](src/main/java/surya/practice/geeks/segmentTree/README.md)                   ||    |
+| 19   | [SegmentTree](src/main/java/surya/practice/geeks/segmentTree/README.md)                   | |    |
 | 20   | [DisjointSet](src/main/java/surya/practice/geeks/disjointSet/README.md)   |                |    |
-
 
 ## Epilogue

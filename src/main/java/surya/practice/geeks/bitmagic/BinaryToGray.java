@@ -1,10 +1,13 @@
 package surya.practice.geeks.bitmagic;
 //Initial Template for Java
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.io.*;
 import java.util.*;
 
 //Position this line where user code will be pasted.
+@Slf4j
 class BinaryToGray {
 
     public static void main(String[] args) {
