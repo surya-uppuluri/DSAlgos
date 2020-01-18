@@ -1,6 +1,6 @@
 ## Heap
 
-
+## Theory Min Heap
 
  |S.No| Problem | Difficulty | Solved | NeedRevision?  | Comments/Algorithms/Tags  |
  |---|---|---|---|---|---|

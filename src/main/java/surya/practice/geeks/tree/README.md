@@ -1,8 +1,11 @@
 ## Tree
 
 
+### Theory
 
- |S.No| Problem | Difficulty | Solved | NeedRevision?  | Comments/Algorithms/Tags  |
+[Types of Binary Trees](TypesOfBinaryTrees.MD)
+
+|S.No| Problem | Difficulty | Solved | NeedRevision?  | Comments/Algorithms/Tags  |
  |---|---|---|---|---|---|
   | 1 | | | | | |
   | 2| | | | | |
