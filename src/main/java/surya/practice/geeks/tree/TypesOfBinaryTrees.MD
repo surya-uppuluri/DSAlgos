@@ -36,8 +36,10 @@
 ##  Complete Binary Tree:
 
 1. Last level needn't be filled.
-1. All but last level shall be filled with 2 elements.
-1. Keys shall be as left as possible.
+
+~~2. All but last level shall be filled with 2 elements.~~
+
+2. Keys shall be as left as possible.
 
 ###  Example1:
 

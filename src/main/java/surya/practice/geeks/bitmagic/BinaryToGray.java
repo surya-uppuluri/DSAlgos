@@ -7,7 +7,6 @@ import java.io.*;
 import java.util.*;
 
 //Position this line where user code will be pasted.
-@Slf4j
 class BinaryToGray {
 
     public static void main(String[] args) {
