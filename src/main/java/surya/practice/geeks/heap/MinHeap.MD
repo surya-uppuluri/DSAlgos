@@ -38,6 +38,8 @@ Typically represented as an array. The root element will be at Arr(0). For any i
                We add a new key at the end of the tree. If new key is larger than its parent, then we don’t need to do anything. 
                Otherwise, we need to traverse up to fix the violated heap property.
 
+![Insert To MinHeap](../../../../../resources/Insert-Bubble-Up-Min-Heap.gif)
+
 Credits: GFG
 
 
