@@ -4,7 +4,7 @@
 
  |S.No| Problem | Difficulty | Solved | NeedRevision?  | Comments/Algorithms/Tags  |
  |---|---|---|---|---|---|
-  | 1 | | | | | |
+  | 1 | [SingleLinkedList](SingleLinkedListDriver.java) | Basic | Basic | No | Basic linked list with insert and delete |
   | 2| | | | | |
   | 3 | | | | | |
   | 4 | | | | | |
