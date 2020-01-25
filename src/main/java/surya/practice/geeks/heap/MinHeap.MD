@@ -40,7 +40,7 @@ Typically represented as an array. The root element will be at Arr(0). For any i
 
 ![Insert To MinHeap](../../../../../resources/Insert-Bubble-Up-Min-Heap.gif)
 
-Credits: GFG
+Credits: GFG and tutorialhorizon
 
 
 ### Heap vs BST

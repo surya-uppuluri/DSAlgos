@@ -74,10 +74,10 @@ public class MinHeapWithArrays {
      * 1. If the node is non-leafy and greater than any of it's children
      *  i) If left child is lesser than right child
      *      a) Swap the node with left child
-     *      b) Heapify on the left child
+     *      b) sinkDown on the left child
      *  ii) Else
      *      a) Swap the node with right child
-     *      b) Heapify on the right child
+     *      b) sinkDown on the right child
      * =========================
      * Space Complexity - O()
      * Time Complexity - O()
