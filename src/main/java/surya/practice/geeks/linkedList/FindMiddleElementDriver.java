@@ -25,22 +25,13 @@ public class FindMiddleElementDriver {
     }
 
     private static void oddElement2PointerTest() {
-        SingleLinkedList singleLinkedList = getOddSingleLinkedList();
+        SingleLinkedList singleLinkedList = new SingleLinkedList().getAnyListWithOddLength();
         findMiddleElementUsing2Pointers(singleLinkedList);
     }
 
-    private static SingleLinkedList getOddSingleLinkedList() {
-        SingleLinkedList singleLinkedList = new SingleLinkedList();
-        singleLinkedList.insertAtEnd(1);
-        singleLinkedList.insertAtEnd(2);
-        singleLinkedList.insertAtEnd(3);
-        singleLinkedList.insertAtEnd(4);
-        singleLinkedList.insertAtEnd(5);
-        return singleLinkedList;
-    }
 
     private static void evenElement2PointerTest() {
-        SingleLinkedList singleLinkedList = getEvenSingleLinkedList();
+        SingleLinkedList singleLinkedList = new SingleLinkedList().getAnyListWithEvenLength();
         findMiddleElementUsing2Pointers(singleLinkedList);
 
 
@@ -69,29 +60,18 @@ public class FindMiddleElementDriver {
     }
 
     private static void oddElementNaiveTest() {
-        SingleLinkedList singleLinkedList = getOddSingleLinkedList();
+        SingleLinkedList singleLinkedList = new SingleLinkedList().getAnyListWithOddLength();
         findMiddleElementNaive(singleLinkedList);
     }
 
     private static void evenElementNaiveTest() {
-        SingleLinkedList singleLinkedList = getEvenSingleLinkedList();
+        SingleLinkedList singleLinkedList = new SingleLinkedList().getAnyListWithEvenLength();
         findMiddleElementNaive(singleLinkedList);
     }
 
-    private static SingleLinkedList getEvenSingleLinkedList() {
-        SingleLinkedList singleLinkedList = new SingleLinkedList();
-        singleLinkedList.insertAtEnd(1);
-        singleLinkedList.insertAtEnd(2);
-        singleLinkedList.insertAtEnd(3);
-        singleLinkedList.insertAtEnd(4);
-        singleLinkedList.insertAtEnd(5);
-        singleLinkedList.insertAtEnd(6);
-        return singleLinkedList;
-
-    }
 
     private static void findMiddleElementNaive(SingleLinkedList singleLinkedList) {
-        int length = getLengthOfLL(singleLinkedList);
+        int length = singleLinkedList.getLength();
         if (length > 0) {
             int subCount = 0;
             Node head = singleLinkedList.getHead();
@@ -107,28 +87,14 @@ public class FindMiddleElementDriver {
 
     }
 
-    private static int getLengthOfLL(SingleLinkedList singleLinkedList) {
-        Node head = singleLinkedList.getHead();
-        if (null == head)
-            return 0;
-        else {
-            int len = 0;
-            while (head != null) {
-                len++;
-                head = head.next;
-            }
-            return len;
-        }
-    }
-
 
     private static void evenElementEfficientTest() {
-        SingleLinkedList singleLinkedList = getEvenSingleLinkedList();
+        SingleLinkedList singleLinkedList = new SingleLinkedList().getAnyListWithEvenLength();
         findMiddleElementEfficiently(singleLinkedList);
     }
 
     private static void oddElementEfficientTest() {
-        SingleLinkedList singleLinkedList = getOddSingleLinkedList();
+        SingleLinkedList singleLinkedList = new SingleLinkedList().getAnyListWithOddLength();
         findMiddleElementEfficiently(singleLinkedList);
     }
 
@@ -142,8 +108,7 @@ public class FindMiddleElementDriver {
         int count = 0;
         Node current = head;
         Node middle = head;
-        if(head==null)
-        {
+        if (head == null) {
             System.out.println("No middle element exists as the list is empty");
             return;
         }
@@ -155,7 +120,6 @@ public class FindMiddleElementDriver {
             current = current.next;
         }
         System.out.println("Middle element of " + singleLinkedList.traverse() + "is " + middle.data);
-
     }
 
 }

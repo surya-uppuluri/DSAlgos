@@ -4,6 +4,21 @@ class SingleLinkedList {
 
     private Node head;
 
+
+    public int getLength() {
+        Node head = this.getHead();
+        if (null == head)
+            return 0;
+        else {
+            int len = 0;
+            while (head != null) {
+                len++;
+                head = head.next;
+            }
+            return len;
+        }
+    }
+
     public void insertAtEnd(int elem) {
         Node temp = new Node(elem);
         if (head == null) {
@@ -16,6 +31,20 @@ class SingleLinkedList {
         }
         curr.next = temp;
         traverse();
+    }
+
+    public void insertAtBeginning(int elem) {
+        Node temp = new Node(elem);
+        if (head == null) {
+            head = temp;
+            traverse();
+            return;
+        }
+        temp.next = head;
+        head = temp;
+        traverse();
+
+
     }
 
     public Node getHead() {
@@ -67,6 +96,33 @@ class SingleLinkedList {
         return stringBuffer.toString();
     }
 
+    public void insertAfter(int elem) {
+        if (head.data == elem) {
+
+        }
+    }
+
+    SingleLinkedList getAnyListWithOddLength() {
+        SingleLinkedList singleLinkedList = new SingleLinkedList();
+        singleLinkedList.insertAtEnd(1);
+        singleLinkedList.insertAtEnd(2);
+        singleLinkedList.insertAtEnd(3);
+        singleLinkedList.insertAtEnd(4);
+        singleLinkedList.insertAtEnd(5);
+        return singleLinkedList;
+    }
+
+    SingleLinkedList getAnyListWithEvenLength() {
+        SingleLinkedList singleLinkedList = new SingleLinkedList();
+        singleLinkedList.insertAtEnd(1);
+        singleLinkedList.insertAtEnd(2);
+        singleLinkedList.insertAtEnd(3);
+        singleLinkedList.insertAtEnd(4);
+        singleLinkedList.insertAtEnd(5);
+        singleLinkedList.insertAtEnd(6);
+        return singleLinkedList;
+
+    }
 
 }
 
@@ -91,6 +147,8 @@ public class SingleLinkedListDriver {
         slList.delete(5);
         slList.delete(1);
         slList.insertAtEnd(9);
+        slList.insertAtBeginning(100);
+        slList.insertAfter(9);
     }
 
 }
