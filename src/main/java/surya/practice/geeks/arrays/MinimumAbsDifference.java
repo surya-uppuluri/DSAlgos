@@ -100,7 +100,7 @@ class MinDiffFinder {
 
 
     //@formatter:off
-    /** Method 3 - Same as method 2 but eliminates 2 passes, difference in runtimes is not so huge, though
+    /** Method 3 - Same as method 2 but eliminates 2 passes, difference in run times is not so huge, though
      * ----------
      * ALGORITHM
      * ----------

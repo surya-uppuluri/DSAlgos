@@ -66,6 +66,8 @@ class SingleLinkedList {
         stringBuffer.append(curr.data).append(" -> null ");
         return stringBuffer.toString();
     }
+
+
 }
 
 class Node {
