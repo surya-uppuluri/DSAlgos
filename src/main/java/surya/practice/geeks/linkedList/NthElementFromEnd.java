@@ -4,9 +4,9 @@ public class NthElementFromEnd {
 
     public static void main(String[] args) {
 
-        SingleLinkedList evenList = new SingleLinkedList().getAnyListWithEvenLength();
+        SingleLinkedList evenList = new SingleLinkedList().getIntegerListWithEvenLength();
         getElementNaive(evenList, 3);
-        SingleLinkedList oddList = new SingleLinkedList().getAnyListWithOddLength();
+        SingleLinkedList oddList = new SingleLinkedList().getIntegerListWithOddLength();
         getElementNaive(oddList, 2);
 
         getElementInOnePassWithHM(evenList, 3);

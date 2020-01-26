@@ -25,13 +25,13 @@ public class FindMiddleElementDriver {
     }
 
     private static void oddElement2PointerTest() {
-        SingleLinkedList singleLinkedList = new SingleLinkedList().getAnyListWithOddLength();
+        SingleLinkedList singleLinkedList = new SingleLinkedList().getIntegerListWithOddLength();
         findMiddleElementUsing2Pointers(singleLinkedList);
     }
 
 
     private static void evenElement2PointerTest() {
-        SingleLinkedList singleLinkedList = new SingleLinkedList().getAnyListWithEvenLength();
+        SingleLinkedList singleLinkedList = new SingleLinkedList().getIntegerListWithEvenLength();
         findMiddleElementUsing2Pointers(singleLinkedList);
 
 
@@ -60,12 +60,12 @@ public class FindMiddleElementDriver {
     }
 
     private static void oddElementNaiveTest() {
-        SingleLinkedList singleLinkedList = new SingleLinkedList().getAnyListWithOddLength();
+        SingleLinkedList singleLinkedList = new SingleLinkedList().getIntegerListWithOddLength();
         findMiddleElementNaive(singleLinkedList);
     }
 
     private static void evenElementNaiveTest() {
-        SingleLinkedList singleLinkedList = new SingleLinkedList().getAnyListWithEvenLength();
+        SingleLinkedList singleLinkedList = new SingleLinkedList().getIntegerListWithEvenLength();
         findMiddleElementNaive(singleLinkedList);
     }
 
@@ -89,12 +89,12 @@ public class FindMiddleElementDriver {
 
 
     private static void evenElementEfficientTest() {
-        SingleLinkedList singleLinkedList = new SingleLinkedList().getAnyListWithEvenLength();
+        SingleLinkedList singleLinkedList = new SingleLinkedList().getIntegerListWithEvenLength();
         findMiddleElementEfficiently(singleLinkedList);
     }
 
     private static void oddElementEfficientTest() {
-        SingleLinkedList singleLinkedList = new SingleLinkedList().getAnyListWithOddLength();
+        SingleLinkedList singleLinkedList = new SingleLinkedList().getIntegerListWithOddLength();
         findMiddleElementEfficiently(singleLinkedList);
     }
 

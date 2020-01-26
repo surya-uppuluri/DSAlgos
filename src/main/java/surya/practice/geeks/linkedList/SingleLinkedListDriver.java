@@ -1,9 +1,26 @@
 package surya.practice.geeks.linkedList;
 
-class SingleLinkedList {
+
+class SingleLinkedList<T> {
 
     private Node head;
 
+    @Override
+    public String toString() {
+        return "SingleLinkedList{" + printLinkedList() + '}';
+    }
+
+    private String printLinkedList() {
+        Node head = this.getHead();
+        StringBuffer stringBuffer = new StringBuffer();
+        while (head != null) {
+            stringBuffer.append(head.data).append("->");
+            head = head.next;
+        }
+        stringBuffer.append("null");
+        System.out.println(stringBuffer);
+        return  stringBuffer.toString();
+    }
 
     public int getLength() {
         Node head = this.getHead();
@@ -19,18 +36,20 @@ class SingleLinkedList {
         }
     }
 
-    public void insertAtEnd(int elem) {
+    public SingleLinkedList insertAtEnd(T elem) {
         Node temp = new Node(elem);
         if (head == null) {
             head = temp;
-            return;
+            return this;
         }
         Node curr = head;
         while (curr.next != null) {
             curr = curr.next;
         }
         curr.next = temp;
+
         traverse();
+        return this;
     }
 
     public void insertAtBeginning(int elem) {
@@ -55,12 +74,12 @@ class SingleLinkedList {
         this.head = head;
     }
 
-    public void delete(int elem) {
+    public void delete(T elem) {
         if (head == null) {
             System.out.println("No elements to delete yet");
             return;
         }
-        if (elem == head.data) {
+        if (elem.equals(head.data)) {
             head = head.next;
             System.out.println("Deletion from start successful");
             return;
@@ -82,27 +101,43 @@ class SingleLinkedList {
     }
 
 
-    public String traverse() {
+    public Node[] traverse() {
+        this.getLength();
+        Node[] listOfNodes = new Node[this.getLength()];
+
+        int i = 0;
         Node curr = head;
         if (curr == null) {
-            return "No elements yet. Empty list";
+            return new Node[0];
         }
-        StringBuffer stringBuffer = new StringBuffer();
-        while (curr.next != null) {
-            stringBuffer.append(curr.data).append(" -> ");
+        while (curr != null) {
+            Node node = new Node(curr.data);
+            node.next = curr.next;
             curr = curr.next;
+            listOfNodes[i++] = node;
         }
-        stringBuffer.append(curr.data).append(" -> null ");
-        return stringBuffer.toString();
+        printLinkedList();
+        return listOfNodes;
     }
 
-    public void insertAfter(int elem) {
-        if (head.data == elem) {
-
+    public SingleLinkedList<T> insertAfter(T elem, T newElem) {
+        Node curr = this.head;
+        while (curr.next != null) {
+            if (curr.data.equals(elem)) {
+                Node newNode = new Node(newElem);
+                newNode.next = curr.next;
+                curr.next = newNode;
+                System.out.println("Insert after " + elem + " is success");
+                traverse();
+                return this;
+            } else {
+                curr = curr.next;
+            }
         }
+        return this;
     }
 
-    SingleLinkedList getAnyListWithOddLength() {
+    SingleLinkedList getIntegerListWithOddLength() {
         SingleLinkedList singleLinkedList = new SingleLinkedList();
         singleLinkedList.insertAtEnd(1);
         singleLinkedList.insertAtEnd(2);
@@ -112,25 +147,17 @@ class SingleLinkedList {
         return singleLinkedList;
     }
 
-    SingleLinkedList getAnyListWithEvenLength() {
-        SingleLinkedList singleLinkedList = new SingleLinkedList();
-        singleLinkedList.insertAtEnd(1);
-        singleLinkedList.insertAtEnd(2);
-        singleLinkedList.insertAtEnd(3);
-        singleLinkedList.insertAtEnd(4);
-        singleLinkedList.insertAtEnd(5);
-        singleLinkedList.insertAtEnd(6);
-        return singleLinkedList;
-
+    SingleLinkedList getIntegerListWithEvenLength() {
+        return getIntegerListWithOddLength().insertAtEnd(6);
     }
 
 }
 
-class Node {
+class Node<T> {
     Node next;
-    int data;
+    T data;
 
-    Node(int data) {
+    Node(T data) {
         this.data = data;
     }
 }
@@ -138,17 +165,14 @@ class Node {
 public class SingleLinkedListDriver {
 
     public static void main(String[] args) {
-        SingleLinkedList slList = new SingleLinkedList();
-        slList.insertAtEnd(1);
-        slList.insertAtEnd(2);
-        slList.insertAtEnd(3);
-        slList.insertAtEnd(4);
+        SingleLinkedList slList = new SingleLinkedList().getIntegerListWithOddLength();
         slList.delete(3);
         slList.delete(5);
         slList.delete(1);
         slList.insertAtEnd(9);
         slList.insertAtBeginning(100);
-        slList.insertAfter(9);
+        slList.insertAfter(100, "Generic test");
+
     }
 
 }
