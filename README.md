@@ -25,7 +25,7 @@ _My source of problem-set is geeksforgeeks and leetCode._
 | 5    | [Sorting](src/main/java/surya/practice/geeks/sorting/README.md)           | Delayed             |    |
 | 6    | [Hashing](src/main/java/surya/practice/geeks/hashing/README.md)           | WIP            |    |
 | 7    | [Strings](src/main/java/surya/practice/geeks/strings/README.md)           |                |    |
-| 8    | [LinkedList](src/main/java/surya/practice/geeks/linkedList/README.md)     |           |    |
+| 8    | [LinkedList](src/main/java/surya/practice/geeks/linkedList/README.md)     |   WIP        |    |
 | 9    | [Stack](src/main/java/surya/practice/geeks/stack/README.md)               |                |    |
 | 10   | [Queue](src/main/java/surya/practice/geeks/queue/README.md)               |                |    |
 | 11   | [Tree](src/main/java/surya/practice/geeks/tree/README.md)                 |                |    |
