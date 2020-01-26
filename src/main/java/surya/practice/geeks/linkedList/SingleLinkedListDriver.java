@@ -19,7 +19,7 @@ class SingleLinkedList<T> {
         }
         stringBuffer.append("null");
         System.out.println(stringBuffer);
-        return  stringBuffer.toString();
+        return stringBuffer.toString();
     }
 
     public int getLength() {
@@ -36,21 +36,28 @@ class SingleLinkedList<T> {
         }
     }
 
-    public SingleLinkedList insertAtEnd(T elem) {
-        Node temp = new Node(elem);
+    public SingleLinkedList insertAtEnd(T value) {
+        Node currNode;
+        if (!(value.getClass() == new Node(5).getClass())) {
+            currNode = new Node(value);
+
+        } else {
+            currNode = (Node) value;
+        }
         if (head == null) {
-            head = temp;
+            head = currNode;
             return this;
         }
         Node curr = head;
         while (curr.next != null) {
             curr = curr.next;
         }
-        curr.next = temp;
+        curr.next = currNode;
 
         traverse();
         return this;
     }
+
 
     public void insertAtBeginning(int elem) {
         Node temp = new Node(elem);
@@ -151,6 +158,13 @@ class SingleLinkedList<T> {
         return getIntegerListWithOddLength().insertAtEnd(6);
     }
 
+    public Node getLastNode() {
+        Node reference = getHead();
+        while (reference.next != null) {
+            reference = reference.next;
+        }
+        return reference;
+    }
 }
 
 class Node<T> {
