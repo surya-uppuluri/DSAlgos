@@ -39,7 +39,7 @@ public class ReverseLinkedList<T> {
                 arr[i++] = (T) n.data;
         }
 
-        reverse(arr);
+        reverseIteratively(arr);
         Node head = singleLinkedList.getHead();
 
         for (T elem : arr) {
@@ -50,7 +50,7 @@ public class ReverseLinkedList<T> {
         return singleLinkedList;
     }
 
-    private T[] reverse(T[] arr) {
+    private T[] reverseIteratively(T[] arr) {
         int low = 0;
         int high = arr.length - 1;
 
@@ -68,13 +68,17 @@ public class ReverseLinkedList<T> {
     //@formatter:off
 
     /**
-     * METHOD2 - Reverse linkedlist in place with 2 extra Nodes
+     * METHOD2 - Reverse linkedList in place with 2 extra Nodes
      * ----------
      * ALGORITHM
      * ----------
      * 1. Keep forming the links in reverse order and make last node as head so that the list is reversed
      * 2. We can't simply say curr.next=prev because we'll lose the track of next element. That's why make use of a
      * reference and call it 'pointer'.
+     * 3. Initially head will be the current element.
+     * 4. Store curr-> next address in reference pointer and then change the next reference to previous
+     * 5. Slide the previous and current to right
+     * 6. Finally mark the last previous as head.
      * =========================
      * Space Complexity - O(1)
      * Time Complexity - O(n)
@@ -82,16 +86,22 @@ public class ReverseLinkedList<T> {
      * Verdict: Optimal solution
      */
     //@formatter:on
-    public SingleLinkedList reverse(SingleLinkedList singleLinkedList) {
-        Node pointer = singleLinkedList.getHead();
+    public SingleLinkedList reverseIteratively(SingleLinkedList singleLinkedList) {
 
-        //
-        Node prevNode = null;
-        Node currNode = null;
-
-
-        singleLinkedList.setHead(currNode);
-
+        Node previous = null;
+        Node current = singleLinkedList.getHead();
+        while (current != null) {
+            Node pointer = current.next;
+            current.next = previous;
+            previous = current;
+            current = pointer;
+        }
+        singleLinkedList.setHead(previous);
         return singleLinkedList;
+    }
+
+    //TODO - Method3 Recursively, Method3 - Tail Recursively
+    public SingleLinkedList reverseRecursively(SingleLinkedList singleLinkedList) {
+        return null;
     }
 }
