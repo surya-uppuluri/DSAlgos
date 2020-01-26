@@ -19,12 +19,12 @@ public class NthElementFromEnd {
     }
 
     //@formatter:On
-    /*
+    /**
     ---------
     ALGORITHM
     ---------
-    1. Computes length first
-    2. Traverses again to get nth element from end
+    1. Compute length first
+    2. Traverse again to get nth element from end
      */
     //@formatter:Off
 
