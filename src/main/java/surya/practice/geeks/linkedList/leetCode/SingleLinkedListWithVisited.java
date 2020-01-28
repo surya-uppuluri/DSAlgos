@@ -9,4 +9,10 @@ public class SingleLinkedListWithVisited extends SingleLinkedList {
         Boolean visited = false;
     }
 
+
+    public boolean detectLoop(SingleLinkedListWithVisited singleLinkedListWithVisited)
+    {
+
+    }
+
 }
