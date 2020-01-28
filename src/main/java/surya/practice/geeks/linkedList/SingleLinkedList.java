@@ -1,7 +1,7 @@
 package surya.practice.geeks.linkedList;
 
 
-class SingleLinkedList<T> {
+public class SingleLinkedList<T> {
 
     private Node head;
 
@@ -54,7 +54,7 @@ class SingleLinkedList<T> {
         }
         curr.next = currNode;
 
-       // traverse();
+        // traverse();
         return this;
     }
 
@@ -176,7 +176,7 @@ class Node<T> {
     }
 }
 
-public class SingleLinkedListDriver {
+/*public class SingleLinkedListDriver {
 
     public static void main(String[] args) {
         SingleLinkedList slList = new SingleLinkedList().getIntegerListWithOddLength();
@@ -189,4 +189,4 @@ public class SingleLinkedListDriver {
 
     }
 
-}
+}*/
