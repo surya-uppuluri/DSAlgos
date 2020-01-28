@@ -2,7 +2,7 @@ package surya.practice.geeks.linkedList;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 class DetectLoopTest {
 
@@ -19,7 +19,10 @@ class DetectLoopTest {
     @Test()
     public void detectLoopPositiveTest() {
         DetectLoop detectLoop = new DetectLoop();
-//        singleLinkedList.insertAtEnd(singleLinkedList.getHead());
-        detectLoop.hasLoopNaive(singleLinkedList);
-    }
+        singleLinkedList.insertAtEnd(singleLinkedList.getHead());
+       //TODO - Even print() goes on infinite loop as it doesn't find null.
+        //Have to fix this later when time is abundant.
+        /*singleLinkedList.toString();
+        assertTrue(detectLoop.hasLoopNaive(singleLinkedList));
+*/    }
 }

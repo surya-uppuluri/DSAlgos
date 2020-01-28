@@ -20,15 +20,18 @@ public class DetectLoop {
     public boolean hasLoopNaive(SingleLinkedList singleLinkedList) {
         Node head = singleLinkedList.getHead();
         if (head == null) return false;
+        Node outerNode = head;
         for (int i = 0; i < singleLinkedList.getLength(); i++) {
-            Node outerNode = head.next;
-            System.out.println("Outer at: "+ outerNode.data);
             Node tempHead = head;
-            for (int j = i; j < singleLinkedList.getLength(); j++) {
-                Node innerNode = tempHead.next;
-                if (innerNode.next == outerNode)
+            Node innerNode = tempHead;
+
+            for (int j = 0; j < i - 1; j++) {
+                if (innerNode == outerNode)
                     return true;
+                innerNode = innerNode.next;
             }
+            outerNode = outerNode.next;
+
         }
         return false;
     }

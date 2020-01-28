@@ -54,7 +54,7 @@ class SingleLinkedList<T> {
         }
         curr.next = currNode;
 
-        traverse();
+       // traverse();
         return this;
     }
 
@@ -158,8 +158,8 @@ class SingleLinkedList<T> {
         return getIntegerListWithOddLength().insertAtEnd(6);
     }
 
-    public Node getLastNode() {
-        Node reference = getHead();
+    public Node<T> getLastNode() {
+        Node<T> reference = getHead();
         while (reference.next != null) {
             reference = reference.next;
         }
