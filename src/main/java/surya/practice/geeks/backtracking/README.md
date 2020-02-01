@@ -1,21 +1,2 @@
-## BackTracking
-
-
-
- |S.No| Problem | Difficulty | Solved | NeedRevision?  | Comments/Algorithms/Tags  |
- |---|---|---|---|---|---|
-  | 1 | | | | | |
-  | 2| | | | | |
-  | 3 | | | | | |
-  | 4 | | | | | |
-  | 5 | | | | | |
-  | 6 | | | | | |
-  | 7 | | | | | |
-  | 8 | | | | | |
-  | 9 | | | | | |
-  | 10 | | | | | |
-  | 11 | | | | | |
-  | 12 | | | | | |
-  | 13 | | | | | |
-  | 14 | | | | | |
-  | 15 | | | | | |
+9x°t¿üâýc”ÒôÕe’G\EÜ¨ŠAh‹°q»2Ì|m¹¶tv’3|l9qD²Äú?WlÂXã1Î}g®!À…aþ°îÄèø\5Y×ÒW¶Ý;pøh}í"ÆþÈZÒò·!*¨¨1µŒM`c%º¸#B–r‚ÁÞ,C©å'’ Pç{°¬{å©ê!÷½9—§~êì±Ó/³Þ¸~ˆ6ú¼òuØÀ¬
+s¸!â;œbË	B8ŽÐà“daÃ²›½1šÉy6µ è:/j†]š0LÅ`Ö„Jsù!ôáJþÎMKŒ•Î4·#FÁþ)è£ˆÁËD²©~}Ì­@PZ ¹Wse¹ÜÏ­ÕbvêLáð¨¼úÉÃª–€Üjzq:»@µFVsŽß‡æ²éá´×6èˆ¯ïfiúÊj lµ•¾(vö$#~š¤6`ýÞÕ:š•Œ9b~JvaÇ_±.êiÉA÷÷–=ù­t=Of²¨6ã‚Öe5|ÁKñm ­%¢#Æ3Ÿç–Í©ïÁx”É*R

@@ -1,21 +1,2 @@
-## Binary Search Tree
-
-
-
- |S.No| Problem | Difficulty | Solved | NeedRevision?  | Comments/Algorithms/Tags  |
- |---|---|---|---|---|---|
-  | 1 | | | | | |
-  | 2| | | | | |
-  | 3 | | | | | |
-  | 4 | | | | | |
-  | 5 | | | | | |
-  | 6 | | | | | |
-  | 7 | | | | | |
-  | 8 | | | | | |
-  | 9 | | | | | |
-  | 10 | | | | | |
-  | 11 | | | | | |
-  | 12 | | | | | |
-  | 13 | | | | | |
-  | 14 | | | | | |
-  | 15 | | | | | |
+1¢!ä(%ÖSÂcQÑ ÎÊO¸¡`svÚØ¤ìÓ[—X¿Ð°«ˆ±g¢4=ýUùïé„À2ÎÑWª0WVN.e.aÓ²g”ëÞÐµ†ÃþGü;äÀ.‰,Äh/Þa‰âò`½ºÿÑÒh#®ÏØú°0‹_â¶Í´zä;lØËDÚ(ö½ÿë}„qu.´TÚ¦S,¿­³†>ú°&°‘x÷íbŒ:Bê+êEI#Ê1§p–Ï
+ÑŽ€~j®™…ÚW}µ½µ3)–Ûð'H•WÓÛ…ˆ	ýöŽç/+|Š”ÀŸé2Ž¥­&F2ÂüÌÛñSRÆ[[)ÚÉU3R÷‘Ì”}—óþ‘ÚûÉÝµù7–µ‘ÜybžÆKž°@­~Š]ë«è‡/ÏöÇ=€¥½õ¿;3,œl@>™½n(;:qñ©ãÖåRbƒ¬¦z:hGNýa£¯§pN[¶wø'÷ÁDtp%Š¼5E+X0`à&¢ðÄ'MøBIþtNÅ¸G,qûŒ,ðû“XD•ÿ‘NÙ·z¬Öø)GtÎŽßsH
