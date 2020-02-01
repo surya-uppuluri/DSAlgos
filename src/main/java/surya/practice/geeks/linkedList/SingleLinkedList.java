@@ -5,6 +5,13 @@ public class SingleLinkedList<T> {
 
     private Node head;
 
+    public SingleLinkedList(Node head) {
+        this.head = head;
+    }
+
+    public SingleLinkedList() {
+    }
+
     @Override
     public String toString() {
         return "SingleLinkedList{" + printLinkedList() + '}';
@@ -145,7 +152,7 @@ public class SingleLinkedList<T> {
     }
 
     SingleLinkedList getIntegerListWithOddLength() {
-        SingleLinkedList singleLinkedList = new SingleLinkedList();
+        SingleLinkedList singleLinkedList = new SingleLinkedList(new Node(25));
         singleLinkedList.insertAtEnd(1);
         singleLinkedList.insertAtEnd(2);
         singleLinkedList.insertAtEnd(3);
@@ -167,26 +174,3 @@ public class SingleLinkedList<T> {
     }
 }
 
-class Node<T> {
-    Node next;
-    T data;
-
-    Node(T data) {
-        this.data = data;
-    }
-}
-
-/*public class SingleLinkedListDriver {
-
-    public static void main(String[] args) {
-        SingleLinkedList slList = new SingleLinkedList().getIntegerListWithOddLength();
-        slList.delete(3);
-        slList.delete(5);
-        slList.delete(1);
-        slList.insertAtEnd(9);
-        slList.insertAtBeginning(100);
-        slList.insertAfter(100, "Generic test");
-
-    }
-
-}*/
