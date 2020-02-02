@@ -17,7 +17,7 @@ public class SingleLinkedList<T> {
         return "SingleLinkedList{" + printLinkedList() + '}';
     }
 
-    private String printLinkedList() {
+    public String printLinkedList() {
         Node head = this.getHead();
         StringBuffer stringBuffer = new StringBuffer();
         while (head != null) {
@@ -116,6 +116,10 @@ public class SingleLinkedList<T> {
 
 
     public Node[] traverse() {
+        if (this.hasLoop() != null) {
+            System.out.println("Loop is detected in the List at " + this.hasLoop().data + ". Not printing the list..");
+            return null;
+        }
         this.getLength();
         Node[] listOfNodes = new Node[this.getLength()];
 
@@ -132,6 +136,23 @@ public class SingleLinkedList<T> {
         }
         printLinkedList();
         return listOfNodes;
+    }
+
+    private Node hasLoop() {
+
+        Node slow = this.getHead();
+        Node fast = slow;
+
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+            /**
+             * Do comparision only after moving because, their initial point is same
+             */
+            if (fast == slow)
+                return fast;
+        }
+        return null;
     }
 
     public SingleLinkedList<T> insertAfter(T elem, T newElem) {
@@ -158,6 +179,8 @@ public class SingleLinkedList<T> {
         singleLinkedList.insertAtEnd(3);
         singleLinkedList.insertAtEnd(4);
         singleLinkedList.insertAtEnd(5);
+        System.out.print("Initial list :: ");
+        singleLinkedList.printLinkedList();
         return singleLinkedList;
     }
 

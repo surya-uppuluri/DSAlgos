@@ -1,49 +1,55 @@
 package surya.practice.geeks.linkedList;
 
+import java.util.HashMap;
+
 public class NthElementFromEnd {
 
-    public static void main(String[] args) {
-
-        SingleLinkedList evenList = new SingleLinkedList().getIntegerListWithEvenLength();
-        getElementNaive(evenList, 3);
-        SingleLinkedList oddList = new SingleLinkedList().getIntegerListWithOddLength();
-        getElementNaive(oddList, 2);
-
-        getElementInOnePassWithHM(evenList, 3);
-
-    }
-
-    private static void getElementInOnePassWithHM(SingleLinkedList evenList, int pos) {
-        if (checkifPositionIsOutOfBounds(pos, evenList.getLength())) return;
-
+    private static boolean isPosOOB(int pos, int len) {
+        if (pos > len) {
+            System.out.println("No such position exists");
+            return true;
+        }
+        return false;
     }
 
     //@formatter:On
+
     /**
-    ---------
-    ALGORITHM
-    ---------
-    1. Compute length first
-    2. Traverse again to get nth element from end
+     * ---------
+     * ALGORITHM
+     * ---------
+     * 1. Compute length first
+     * 2. Traverse again to get nth element from end
      */
     //@formatter:Off
 
-    private static void getElementNaive(SingleLinkedList singleLinkedList, int pos) {
+     Node getElementNaive(SingleLinkedList singleLinkedList, int pos) {
         int len = singleLinkedList.getLength();
-        if (checkifPositionIsOutOfBounds(pos, len)) return;
+        if (isPosOOB(pos, len)) return null;
         Node head = singleLinkedList.getHead();
         for (int i = 0; i < len - pos; i++) {
             head = head.next;
         }
-        System.out.println("Element at: " + (pos) + " position from end is " + head.data);
+         System.out.println("Element at: " + (pos) + " position from end is " + head.data);
+         return head;
     }
 
-    private static boolean checkifPositionIsOutOfBounds(int pos, int len) {
-        if (pos > len) {
-            System.out.println("No such index exists");
-            return true;
+    public Node getElementInOnePassWithHM(SingleLinkedList evenList, int pos) {
+//        System.out.println("Obtained list: "+ evenList.printLinkedList());
+        if (isPosOOB(pos, evenList.getLength())) return null;
+        HashMap<Integer, Node> addressMap = new HashMap<>();
+        Node temp = evenList.getHead();
+        addressMap.put(0, temp);
+        Integer counter = new Integer(1);
+        while (temp != null) {
+            addressMap.put(counter, temp.next);
+            counter++;
+            temp = temp.next;
         }
-        return false;
+        System.out.println(addressMap.toString());
+        int size = addressMap.size();
+        return addressMap.get(size - pos - 1);
+
     }
 
 }

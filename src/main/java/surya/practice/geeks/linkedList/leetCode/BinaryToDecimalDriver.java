@@ -188,6 +188,13 @@ public class BinaryToDecimalDriver {
             String out = String.valueOf(ret);
 
             System.out.print(out);
+
+
+            int ret1 = new BinaryToDecimal().getDecimalValueUsingLength(head);
+
+            String out1 = String.valueOf(ret);
+
+            System.out.print(out1);
         }
     }
 }

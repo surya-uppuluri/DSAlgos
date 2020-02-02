@@ -39,4 +39,7 @@ _My source of problem-set is geeksforgeeks and leetCode._
 | 19   | [SegmentTree](src/main/java/surya/practice/geeks/segmentTree/README.md)                   | |    |
 | 20   | [DisjointSet](src/main/java/surya/practice/geeks/disjointSet/README.md)   |                |    |
 
+
+[Other Useful links](https://leetcode.com/discuss/general-discussion/494279/comprehensive-data-structure-and-algorithm-study-guide) - Abdul Bari's Algorithm videos for Recursion
+
 ## Epilogue

@@ -9,4 +9,13 @@ public class Node<T> {
         this.data = data;
         this.visited = false;
     }
+
+
+    @Override
+    public String toString() {
+        return "Node{" +
+                "next=" + next +
+                ", data=" + data +
+                '}';
+    }
 }

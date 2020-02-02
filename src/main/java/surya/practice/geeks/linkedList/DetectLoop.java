@@ -119,4 +119,41 @@ public class DetectLoop {
 
                                     }
 
+    public Boolean removeLoop(SingleLinkedList singleLinkedList) {
+
+        //Returns true if loop is detected and removed
+
+        Node slow = singleLinkedList.getHead();
+        Node fast = slow;
+
+        singleLinkedList.traverse();
+
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+            /**
+             * Do comparision only after moving because, their initial point is same
+             */
+            if (fast == slow)
+                break;
+        }
+
+        if (slow != fast) return false;
+
+        slow = singleLinkedList.getHead();
+        if (slow == fast) {
+            slow = singleLinkedList.getHead();
+            while (slow.next != fast.next) {
+                slow = slow.next;
+                fast = fast.next;
+            }
+
+            fast.next = null; /* remove loop */
+
+            singleLinkedList.printLinkedList();
+
+            return true;
+        }
+        return false;
+    }
 }
