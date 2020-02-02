@@ -1,18 +1,6 @@
 ## CUT
 
-####  Source file content
-
-> 1ABCDE,FGHIJ:KLMNO"PQRSTUVQXYZ-abcdefghijklmnopqrstuvwxyz
->
-> 2ABCDE,FGHIJ:KLMNO"PQRSTUVQXYZ-abcdefghijklmnopqrstuvwxyz
-
-> 3ABCDE,FGHIJ:KLMNO"PQRSTUVQXYZ-abcdefghijklmnopqrstuvwxyz
->
-> 4ABCDE,FGHIJ:KLMNO"PQRSTUVQXYZ-abcdefghijklmnopqrstuvwxyz
->
-> 5ABCDE,FGHIJ:KLMNO"PQRSTUVQXYZ-abcdefghijklmnopqrstuvwxyz
-
-
+[Source file](src4AllEg.txt)
 ### Limitations
 
 Limitations
