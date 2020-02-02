@@ -119,12 +119,13 @@ public class DetectLoop {
 
                                     }
 
+    //TODO - Logic/Implementation doesn't seem right because elements are meeting at 3, yet not being detected as same
     public Boolean removeLoop(SingleLinkedList singleLinkedList) {
 
         //Returns true if loop is detected and removed
 
         Node slow = singleLinkedList.getHead();
-        Node fast = slow;
+        Node fast = singleLinkedList.getHead();
 
         singleLinkedList.traverse();
 
@@ -141,19 +142,21 @@ public class DetectLoop {
         if (slow != fast) return false;
 
         slow = singleLinkedList.getHead();
-        if (slow == fast) {
-            slow = singleLinkedList.getHead();
-            while (slow.next != fast.next) {
-                slow = slow.next;
-                fast = fast.next;
-            }
+        while (slow != fast) {
+            System.out.println("slow.data is :" + slow.data);
+            System.out.println("fast.data is :" + fast.data);
 
-            fast.next = null; /* remove loop */
+            slow = slow.next;
+            fast = fast.next;
 
-            singleLinkedList.printLinkedList();
-
-            return true;
+            System.out.println("After move, slow.data is :" + slow.data);
+            System.out.println("After move, fast.data is :" + fast.data);
         }
-        return false;
+
+        fast.next.next = null;
+
+        singleLinkedList.printLinkedList();
+
+        return true;
     }
 }

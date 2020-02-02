@@ -82,10 +82,13 @@ class DetectLoopTest {
     @Test
     @DisplayName("Detect and remove loop Floyd")
     public void removeLoop() {
-        singleLinkedList.insertAtEnd(singleLinkedList.traverse()[3]);
-        System.out.println("Formed a loop after 5 that points to 3");
-        //TODO
-//        assertTrue(new DetectLoop().removeLoop(singleLinkedList));
+
+        Node loopNode = singleLinkedList.traverse()[3];
+        System.out.println("Forming a loop after 5 that points to :"+ loopNode);
+
+        singleLinkedList.insertAtEnd(loopNode);
+
+        assertTrue(new DetectLoop().removeLoop(singleLinkedList));
 
     }
 
