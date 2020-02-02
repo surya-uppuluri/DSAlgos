@@ -155,6 +155,28 @@ public class SingleLinkedList<T> {
         return null;
     }
 
+    //@formatter:off
+                    /**
+                     * Given a node from a SLL, and no head is given, remove the node from the linked list.
+                    * ----------
+                    * ALGORITHM
+                    * ----------
+                    * This is a tricky question.
+                     * The only way to solve this is by copying the data of the next node to given node and deleting
+                     * the next node.
+                     * Doesn't work if the element to be deleted is the last node
+                     *
+                    * =========================
+                    * Space Complexity - O()
+                    * Time Complexity - O()
+                    * =========================
+                    */
+                    //@formatter:on
+                    public void deleteNodeWithoutAnyOtherReferences(Node node) {
+                        node.data = node.next.data;
+                        node.next = node.next.next;
+                    }
+
     public SingleLinkedList<T> insertAfter(T elem, T newElem) {
         Node curr = this.head;
         while (curr.next != null) {
