@@ -1,6 +1,7 @@
 ![dsa](src/main/resources/dsa.png)
 
 ![License](https://img.shields.io/badge/license-Apache_2.0-blue.svg) [![Build Status](https://travis-ci.org/surya-uppuluri/DSAlgos.svg?branch=master)](https://travis-ci.org/surya-uppuluri/DSAlgos) ![Language](https://img.shields.io/badge/language-Java%20%2F%20Oracle%20%2F%20Bash-blue.svg)
+[![codecov](https://codecov.io/gh/surya-uppuluri/DSAlgos/branch/master/graph/badge.svg)](https://codecov.io/gh/surya-uppuluri/DSAlgos)
 
 # Data Structures and Algorithms
 

@@ -132,7 +132,7 @@ public class DetectLoop {
             fast = fast.next.next;
             slow = slow.next;
             /**
-             * Do comparision only after moving because, their initial point is same
+             * Do comparision only after moving because, their initial position is same
              */
             if (fast == slow)
                 break;

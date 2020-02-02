@@ -12,14 +12,14 @@ class ReverseLinkedListTest {
     @Test
     void reverseWithArrays() {
         singleLinkedList = new ReverseLinkedList().reverseWithArrays(singleLinkedList);
-        String expected = "SingleLinkedList{5->4->3->2->1->null}";
+        String expected = "SingleLinkedList{5->4->3->2->1->25->null}";
         assertEquals( expected, singleLinkedList.toString());
     }
 
     @Test
     void reverseInPlace() {
         singleLinkedList = new ReverseLinkedList().reverseIteratively(singleLinkedList);
-        String expected = "SingleLinkedList{5->4->3->2->1->null}";
+        String expected = "SingleLinkedList{5->4->3->2->1->25->null}";
         assertEquals(expected, singleLinkedList.toString());
     }
 
