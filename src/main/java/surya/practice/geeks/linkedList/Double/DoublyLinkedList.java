@@ -41,7 +41,7 @@ public class DoublyLinkedList {
                     */
                     //@formatter:on
 
-                    Node deleteNode(Node head, int x) throws NoSuchIndexException {
+                    Node deleteNode(int x) throws NoSuchIndexException {
 
                         int len = getLengthOfDLL();
                         if (x > len || x < 0) {

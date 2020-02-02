@@ -10,4 +10,13 @@ public class Node
         data = d;
         next = prev = null;
     }
+
+    @Override
+    public String toString() {
+        return "Node{" +
+                "data=" + data +
+                ", next=" + next +
+                ", prev=" + prev +
+                '}';
+    }
 }

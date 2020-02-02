@@ -18,7 +18,7 @@ class DoublyLinkedListTest {
         DoublyLinkedList doublyLinkedList = getDLLWithLen5();
 
         int posToBeDeleted = 4;
-        NoSuchIndexException noSuchIndexException = assertThrows(NoSuchIndexException.class, () -> doublyLinkedList.deleteNode(doublyLinkedList.head, posToBeDeleted));
+        NoSuchIndexException noSuchIndexException = assertThrows(NoSuchIndexException.class, () -> doublyLinkedList.deleteNode(posToBeDeleted));
         assertTrue(noSuchIndexException.getMessage().contains("No such index in the list"));
 
     }
@@ -27,12 +27,10 @@ class DoublyLinkedListTest {
     @DisplayName("Test Node Deletion - Positive case")
     void testDeleteNode() throws NoSuchIndexException {
 
-        Node head;
-
         DoublyLinkedList doublyLinkedList = getDLLWithLen5();
-        head = doublyLinkedList.head;
         int posToBeDeleted = 2;
-        doublyLinkedList.deleteNode(doublyLinkedList.head, posToBeDeleted);
+        System.out.println("Head is :" + doublyLinkedList.head);
+        doublyLinkedList.deleteNode(posToBeDeleted);
         assertEquals("1 3 4 5 ", doublyLinkedList.printList());
 
     }
@@ -52,7 +50,7 @@ class DoublyLinkedListTest {
     @DisplayName("Test that count of DLL works properly")
     void getLengthOfDLL() {
         DoublyLinkedList dll = getDLLWithLen5();
-        assertEquals(3, dll.getLengthOfDLL());
+        assertEquals(5, dll.getLengthOfDLL());
     }
 
     @Test
