@@ -100,8 +100,18 @@ public class ReverseLinkedList<T> {
         return singleLinkedList;
     }
 
-    //TODO - Method3 Recursively, Method3 - Tail Recursively
     public SingleLinkedList reverseRecursively(SingleLinkedList singleLinkedList) {
-        return null;
+         singleLinkedList.setHead(reverseRec(singleLinkedList.getHead()));
+         return singleLinkedList;
+    }
+
+    private Node reverseRec(Node head) {
+        if (head == null || head.next == null)
+            return head;
+        Node nextNode = head.next;
+        Node newHead = reverseRec(nextNode);
+        nextNode.next = head;
+        head.next = null;
+        return newHead;
     }
 }

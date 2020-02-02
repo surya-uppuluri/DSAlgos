@@ -1,5 +1,6 @@
 package surya.practice.geeks.linkedList;
 
+import surya.practice.geeks.linkedList.Node;
 
 public class SingleLinkedList<T> {
 
