@@ -40,6 +40,18 @@ class DoublyLinkedListTest {
         return doublyLinkedList;
     }
 
+    public DoublyLinkedList getDLLWithLen6() {
+        DoublyLinkedList doublyLinkedList = new DoublyLinkedList();
+        doublyLinkedList.addToTheLast(new Node(1));
+        doublyLinkedList.addToTheLast(new Node(2));
+        doublyLinkedList.addToTheLast(new Node(3));
+        doublyLinkedList.addToTheLast(new Node(4));
+        doublyLinkedList.addToTheLast(new Node(5));
+        doublyLinkedList.addToTheLast(new Node(6));
+
+        return doublyLinkedList;
+    }
+
     @Test
     @DisplayName("Test that count of DLL works properly")
     void getLengthOfDLL() {
@@ -57,7 +69,7 @@ class DoublyLinkedListTest {
     }
 
     @Test
-    @DisplayName("Test that insert in middle works properly")
+    @DisplayName("Test that insert in random location works properly")
     void insertAtPosTest() {
         DoublyLinkedList doublyLinkedList = getDLLWithLen5();
         doublyLinkedList.insertAtPos(doublyLinkedList.head, 3, 999);
@@ -73,7 +85,7 @@ class DoublyLinkedListTest {
     }
 
     @Test
-    @DisplayName("Test that insert in middle works properly")
+    @DisplayName("Test that insert in random location works properly")
     void insertAfterPosTest() {
         DoublyLinkedList doublyLinkedList = getDLLWithLen5();
         doublyLinkedList.insertAfterPos(doublyLinkedList.head, 3, 999);
@@ -87,4 +99,39 @@ class DoublyLinkedListTest {
         doublyLinkedList.insertAfterPos(doublyLinkedList.head, 0, 999);
         assertEquals("1 999 2 3 4 5 ", doublyLinkedList.printList());
     }
+
+
+    @Test
+    @DisplayName("Test that insert in middle for odd list works properly")
+    void insertInOddMidTest() {
+        DoublyLinkedList doublyLinkedList = getDLLWithLen5();
+        doublyLinkedList.insertInMid(doublyLinkedList.head, 999);
+        assertEquals("1 2 999 3 4 5 ", doublyLinkedList.printList());
+    }
+
+    @Test
+    @DisplayName("Test that insert in middle for even list works properly")
+    void insertInEvenMidTest() {
+        DoublyLinkedList doublyLinkedList = getDLLWithLen5();
+        doublyLinkedList.insertAtPos(doublyLinkedList.head, doublyLinkedList.getLengthOfDLL(doublyLinkedList.head) + 1, 6);
+        doublyLinkedList.insertInMid(doublyLinkedList.head, 999);
+        assertEquals("1 2 3 999 4 5 6 ", doublyLinkedList.printList());
+    }
+
+    @Test
+    @DisplayName("Test that two lists are identical - Positive")
+    void identicalLinkedListPositiveTest() {
+        DoublyLinkedList dll1 = getDLLWithLen5();
+        DoublyLinkedList dll2 = getDLLWithLen5();
+        assertTrue(dll1.isEqualTo(dll2));
+    }
+
+    @Test
+    @DisplayName("Test that two lists are identical - Negative")
+    void identicalLinkedListNegativeTest() {
+        DoublyLinkedList dll1 = getDLLWithLen5();
+        DoublyLinkedList dll2 = getDLLWithLen6();
+        assertFalse(dll1.isEqualTo(dll2));
+    }
+
 }

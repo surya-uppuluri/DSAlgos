@@ -131,4 +131,43 @@ public class DoublyLinkedList {
         temp.next = newNode;
         newNode.next = curr;
     }
+
+
+    public void insertInMid(Node head, int data) {
+
+        int len = 0;
+        Node temp = head;
+
+        while (temp != null) {
+            temp = temp.next;
+            len++;
+        }
+
+        int pos = len / 2;
+
+        temp = head;
+
+        for (int ctr = 0; ctr < pos - 1; ctr++) {
+            temp = temp.next;
+        }
+
+        Node curr = temp.next;
+        Node newN = new Node(data);
+
+        temp.next = newN;
+        newN.next = curr;
+        newN.prev = temp;
+
+    }
+
+    public boolean isEqualTo(DoublyLinkedList dll2) {
+        Node curr1 = this.head;
+        Node curr2 = dll2.head;
+        while (curr1 != null && curr2 != null) {
+            if (curr1.data != curr2.data) return false;
+            curr1 = curr1.next;
+            curr2 = curr2.next;
+        }
+        return curr1 == null && curr2 == null;
+    }
 }
