@@ -1,9 +1,12 @@
 package surya.practice.geeks.linkedList.Double;
 
+
 public class DoublyLinkedList {
 
     Node head;
 
+
+    //    LinkedList
     void addToTheLast(Node node) {
         if (head == null) {
             head = node;
@@ -40,11 +43,12 @@ public class DoublyLinkedList {
                     * =========================
                     */
                     //@formatter:on
-                    Node deleteNode(int x) throws NoSuchIndexException {
+                    Node deleteNode(Node head, int x) throws NoSuchIndexException {
                         printList();
-                        Node head = this.head;
-                        System.out.println("Length " + getLengthOfDLL() + " and head is: "+ head);
-                        int len = this.getLengthOfDLL();
+//                        Node temp1 = head;
+//                        System.out.println("Length " + getLengthOfDLL(head) + " and head is: " + head + " but temp head is : "/*+ temp1*/);
+                        int len = getLengthOfDLL(head);
+                        System.out.println("Length is: " + len);
                         if (x > len || x < 0) {
                             throw new NoSuchIndexException("No such index in the list");
                         }
@@ -66,7 +70,7 @@ public class DoublyLinkedList {
                         return head;
                     }
 
-    public int getLengthOfDLL() {
+    public int getLengthOfDLL(Node head) {
         int ctr = 0;
         while (head != null) {
             ctr++;
@@ -94,5 +98,37 @@ public class DoublyLinkedList {
 
         return head;
 
+    }
+
+    public void insertAtPos(Node head, int pos, int data) {
+        if (pos == 0) {
+            Node temp = new Node(data);
+            temp.next = head;
+            head.prev = temp;
+            this.head = temp;
+            return;
+        }
+        Node temp = head;
+        for (int ctr = 1; ctr < pos - 1; ctr++) {
+            temp = temp.next;
+        }
+        Node curr = temp.next;
+        temp.next = new Node(data);
+        temp.next.prev = temp;
+        temp.next.next = curr;
+    }
+
+
+    public void insertAfterPos(Node head, int pos, int data) {
+        Node temp = head;
+        /* 1 2 3 4 5 (0,999) -> 1 999 2 3 4 5
+         */
+        for (int ctr = 1; ctr < pos; ctr++)
+            temp = temp.next;
+        Node newNode = new Node(data);
+        Node curr = temp.next;
+        newNode.prev = temp;
+        temp.next = newNode;
+        newNode.next = curr;
     }
 }
