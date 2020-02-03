@@ -9,7 +9,7 @@ class DoublyLinkedListTest {
 
     @Test
     @DisplayName("Test NSI exception - Negative Scenario")
-    void testNSIExceptionOnDeleteNode() {
+    public void testNSIExceptionOnDeleteNode() {
 
         Node head;
         Node temp;
@@ -25,7 +25,7 @@ class DoublyLinkedListTest {
 
     @Test
     @DisplayName("Test Node Deletion - Positive case")
-    void testDeleteNode() throws NoSuchIndexException {
+    public void testDeleteNode() throws NoSuchIndexException {
 
         DoublyLinkedList doublyLinkedList = getDLLWithLen5();
         int posToBeDeleted = 2;
@@ -35,7 +35,7 @@ class DoublyLinkedListTest {
 
     }
 
-    private DoublyLinkedList getDLLWithLen5() {
+    public DoublyLinkedList getDLLWithLen5() {
         DoublyLinkedList doublyLinkedList = new DoublyLinkedList();
         doublyLinkedList.addToTheLast(new Node(1));
         doublyLinkedList.addToTheLast(new Node(2));

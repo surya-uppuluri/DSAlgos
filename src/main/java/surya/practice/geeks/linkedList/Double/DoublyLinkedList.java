@@ -40,10 +40,11 @@ public class DoublyLinkedList {
                     * =========================
                     */
                     //@formatter:on
-
                     Node deleteNode(int x) throws NoSuchIndexException {
-
-                        int len = getLengthOfDLL();
+                        printList();
+                        Node head = this.head;
+                        System.out.println("Length " + getLengthOfDLL() + " and head is: "+ head);
+                        int len = this.getLengthOfDLL();
                         if (x > len || x < 0) {
                             throw new NoSuchIndexException("No such index in the list");
                         }
