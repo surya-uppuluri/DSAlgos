@@ -49,38 +49,86 @@ import java.util.HashSet;
   */
 //@formatter:on
 
-//@formatter:off
-                    /**
-                    * ----------
-                    * ALGORITHM
-                    * ----------
-                    * 1. Store all nodes of A in hashset
-                     * 2. Find them while traversing B.
-                    * =========================
-                    * Space Complexity - O(m)
-                    * Time Complexity - O(m)+O(n)
-                    * =========================
-                    * m = size of list1, n = size of list2
-                     * Verdict: VERY SLOW and uses extra space which shouldn't be so.
-                     * Runtime: 7 ms, faster than 26.61% of Java online submissions for Intersection of Two Linked Lists.
-                     * Memory Usage: 44.7 MB, less than 5.71% of Java online submissions for Intersection of Two Linked Lists.
-                     */
-
-                    //@formatter:on
+/**
+ * Way1- Naive
+ * ----------
+ * ALGORITHM
+ * ----------
+ * 1. Store all nodes of A in hashset
+ * 2. Find them while traversing B.
+ * =========================
+ * Space Complexity - O(m)
+ * Time Complexity - O(m)+O(n)
+ * =========================
+ * m = size of list1, n = size of list2
+ * Verdict: VERY SLOW and uses extra space which shouldn't be so.
+ * Runtime: 7 ms, faster than 26.61% of Java online submissions for Intersection of Two Linked Lists.
+ * Memory Usage: 44.7 MB, less than 5.71% of Java online submissions for Intersection of Two Linked Lists.
+ */
 
 
-                    public class IntersectionFinder {
-                        public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-                            HashSet<ListNode> res = new HashSet();
-                            while (headA != null) {
-                                res.add(headA);
-                                headA = headA.next;
-                            }
+public class IntersectionFinder {
 
-                            while (headB != null) {
-                                if (res.contains(headB)) return headB;
-                                else headB = headB.next;
-                            }
-                            return null;
-                        }
-                    }
+    public ListNode getIntersectionNodeNaive(ListNode headA, ListNode headB) {
+        HashSet<ListNode> res = new HashSet();
+        while (headA != null) {
+            res.add(headA);
+            headA = headA.next;
+        }
+
+        while (headB != null) {
+            if (res.contains(headB)) return headB;
+            else headB = headB.next;
+        }
+        return null;
+    }
+
+    /**
+     * Way2- Efficient using differences in length
+     * ----------
+     * ALGORITHM
+     * ----------
+     * 1. Find differences in the lengths of the lists.
+     * 2. Traverse the larger list about the length of the difference.
+     * 3. Start comparing henceforth.
+     * =========================
+     * Time Complexity - O(n)+O(n)+O(n-m) = O(n)
+     * Space Complexity - O(1)
+     * =========================
+     * VERDICT: FAST!
+     * Runtime: 1 ms, faster than 99.05% of Java online submissions for Intersection of Two Linked Lists.
+     * Memory Usage: 42.1 MB, less than 5.71% of Java online submissions for Intersection of Two Linked Lists.
+     */
+
+    public ListNode getIntersectionNodeEfficient(ListNode headA, ListNode headB) {
+        ListNode ha = headA, hb = headB;
+        int lenA = 0, lenB = 0;
+        while (headA != null) {
+            headA = headA.next;
+            lenA++;
+        }
+
+        while (headB != null) {
+            headB = headB.next;
+            lenB++;
+        }
+
+        int diff = Math.abs(lenA - lenB);
+        if (lenA > lenB)
+            for (lenA = 0; lenA < diff; lenA++)
+                ha = ha.next;
+        else if (lenB > lenA)
+            for (lenB = 0; lenB < diff; lenB++)
+                hb = hb.next;
+
+        while (ha != null && hb != null) {
+            if (ha == hb) return ha;
+            else {
+                ha = ha.next;
+                hb = hb.next;
+            }
+        }
+
+        return null;
+    }
+}

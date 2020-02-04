@@ -16,7 +16,7 @@ class IntersectionFinderTest {
         ListNode listB = stringToListNode("[5,0,1,8,4,5]");
         int intersectVal = 8;
         modifyListsToFormChain(listA, listB, intersectVal);
-        ListNode ret = new IntersectionFinder().getIntersectionNode(listA, listB);
+        ListNode ret = new IntersectionFinder().getIntersectionNodeNaive(listA, listB);
         String out = listNodeToString(ret);
         assertEquals(String.valueOf(intersectVal), out.replaceAll("\\[", "").split(",")[0]);
 
@@ -36,5 +36,17 @@ class IntersectionFinderTest {
         while ((temp.next.val != intersectVal))
             temp = temp.next;
         temp.next = interNode;
+    }
+
+    @Test
+    void getIntersectionNodeEfficient() {
+
+        ListNode listA = stringToListNode("[4,1,8,4,5]");
+        ListNode listB = stringToListNode("[5,0,1,8,4,5]");
+        int intersectVal = 8;
+        modifyListsToFormChain(listA, listB, intersectVal);
+        ListNode ret = new IntersectionFinder().getIntersectionNodeEfficient(listA, listB);
+        String out = listNodeToString(ret);
+        assertEquals(String.valueOf(intersectVal), out.replaceAll("\\[", "").split(",")[0]);
     }
 }
