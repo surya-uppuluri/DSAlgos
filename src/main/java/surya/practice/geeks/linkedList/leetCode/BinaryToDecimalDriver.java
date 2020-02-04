@@ -1,5 +1,7 @@
 package surya.practice.geeks.linkedList.leetCode;
 
+import surya.practice.geeks.linkedList.ListNode;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -57,15 +59,6 @@ import java.io.InputStreamReader;
  * Each node's value is either 0 or 1.
  */
 //@formatter:on
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-    }
-}
 
 class BinaryToDecimal {
     //@formatter:off
@@ -164,7 +157,6 @@ public class BinaryToDecimalDriver {
     }
 
     public static ListNode stringToListNode(String input) {
-        // Generate array from the input
         int[] nodeValues = stringToIntegerArray(input);
 
         // Now convert that list into linked list

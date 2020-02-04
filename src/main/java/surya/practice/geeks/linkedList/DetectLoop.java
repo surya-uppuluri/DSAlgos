@@ -42,7 +42,7 @@ public class DetectLoop {
                 * ----------
                 * ALGORITHM
                 * ----------
-                * 1. Change the Node datastructure to have an extra variable called visited.
+                * 1. Change the Node data structure to have an extra variable called visited.
                 * =========================
                 * Space Complexity - O(n)
                 * Time Complexity - O(n)
@@ -70,6 +70,9 @@ public class DetectLoop {
                     * Space Complexity - O(n)
                     * Time Complexity - O(n)
                     * =========================
+                     * Verdict: SLOW!
+                     * Runtime: 3 ms, faster than 22.76% of Java online submissions for Linked List Cycle.
+                     * Memory Usage: 41.5 MB, less than 5.71% of Java online submissions for Linked List Cycle.
                     */
                     //@formatter:on
                     public boolean hasLoop_hashing(SingleLinkedList singleLinkedList) {
@@ -99,6 +102,10 @@ public class DetectLoop {
                                     * Space Complexity - O(1)
                                     * Time Complexity - O(n)
                                     * =========================
+                                     * Verdict: FAST
+                                     * Runtime: 0 ms, faster than 100.00% of Java online submissions for Linked List Cycle.
+                                     * Memory Usage: 40.9 MB, less than 5.71% of Java online submissions for Linked List Cycle. //Looks like leetcode has a bug in
+                                     * computing memory usage stats
                                     */
                                     //@formatter:on
                                     public boolean hasLoop_Floyd(SingleLinkedList singleLinkedList) {
