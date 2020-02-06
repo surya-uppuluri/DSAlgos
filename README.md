@@ -3,7 +3,7 @@
 ![License](https://img.shields.io/badge/license-Apache_2.0-blue.svg) [![Build Status](https://travis-ci.org/surya-uppuluri/DSAlgos.svg?branch=master)](https://travis-ci.org/surya-uppuluri/DSAlgos) ![Language](https://img.shields.io/badge/language-Java%20%2F%20Oracle%20%2F%20Bash-blue.svg)
 [![codecov](https://codecov.io/gh/surya-uppuluri/DSAlgos/branch/master/graph/badge.svg)](https://codecov.io/gh/surya-uppuluri/DSAlgos)
 
-# Data Structures and Algorithms
+# [Data Structures and Algorithms](https://surya-uppuluri.github.io/DSAlgos/)
 
 **This is a repo of my solutions/code for the problems that I practise for mastering Data Structures and Algorithms.**
 
@@ -29,7 +29,7 @@ _My source of problem-set is geeksforgeeks and leetCode._
 | 8    | [LinkedList](src/main/java/surya/practice/geeks/linkedList/README.md)     |   WIP        |    |
 | 9    | [Stack](src/main/java/surya/practice/geeks/stack/README.md)               |                |    |
 | 10   | [Queue](src/main/java/surya/practice/geeks/queue/README.md)               |                |    |
-| 11   | [Tree](src/main/java/surya/practice/geeks/tree/README.md)                 |                |    |
+| 11   | [Tree](src/main/java/surya/practice/geeks/tree/README.md)                 |      WIP          |    |
 | 12   | [BST](src/main/java/surya/practice/geeks/bst/README.md)                   |                |    |
 | 13   | [Heap](src/main/java/surya/practice/geeks/heap/README.md)                 |                |    |
 | 14   | [Graph](src/main/java/surya/practice/geeks/graph/README.md)               |                |    |

@@ -173,4 +173,9 @@ public class BinaryTree {
         else
             return Math.max((Integer) root.data, Math.max(getMaxFromTree(root.left), getMaxFromTree(root.right)));
     }
+
+    public int getHeightOfTree(Node root) {
+        if (root == null) return 0;
+        else return Math.max(getHeightOfTree(root.left), getHeightOfTree(root.right)) + 1;
+    }
 }

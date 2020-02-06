@@ -105,7 +105,16 @@ class BinaryTreeTest {
         BinaryTree binaryTree = new BinaryTree();
         Node root = getABinaryTreeWithSize5();
 
-        assertEquals(binaryTree.getMaxFromTree(root), 50);
+        assertEquals(50, binaryTree.getMaxFromTree(root));
+    }
+
+
+    @Test
+    @DisplayName(" HeightOfTree -  Test")
+    public void TestThatHeightOfATreeWorks() {
+        BinaryTree binaryTree = new BinaryTree();
+        Node root = getABinaryTreeWithSize5();
+        assertEquals(3, binaryTree.getHeightOfTree(root));
     }
 
 
