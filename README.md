@@ -11,34 +11,34 @@ _My source of problem-set is geeksforgeeks and leetCode._
 
 ### Prelude
 
-[Time and Space Complexity](src/main/java/surya/practice/meta/README.md)
+[Time and Space Complexity](src/main/java/surya/practice/meta)
 
-[Recursion](src/main/java/surya/practice/geeks/recursion/README.md)
+[Recursion](src/main/java/surya/practice/geeks/recursion)
 
 ## List of Topics
 
 | S.No | Topic                                                                     | Status?      |    |
 |:-----|:--------------------------------------------------------------------------|:---------------|:---|
-| 1    | [Arrays](src/main/java/surya/practice/geeks/arrays/README.md)             | It never ends! |    |
-| 2    | [BitMagic](src/main/java/surya/practice/geeks/bitmagic/README.md)         | Almost Complete        |    |
-| 3    | [Matrix](src/main/java/surya/practice/geeks/matrix/README.md)             | Still some to solve             |    |
-| 4    | [Searching](src/main/java/surya/practice/geeks/searching/README.md)       | WIP            |    |
-| 5    | [Sorting](src/main/java/surya/practice/geeks/sorting/README.md)           | Delayed             |    |
-| 6    | [Hashing](src/main/java/surya/practice/geeks/hashing/README.md)           | WIP            |    |
-| 7    | [Strings](src/main/java/surya/practice/geeks/strings/README.md)           |                |    |
-| 8    | [LinkedList](src/main/java/surya/practice/geeks/linkedList/README.md)     |   WIP        |    |
-| 9    | [Stack](src/main/java/surya/practice/geeks/stack/README.md)               |                |    |
-| 10   | [Queue](src/main/java/surya/practice/geeks/queue/README.md)               |                |    |
-| 11   | [Tree](src/main/java/surya/practice/geeks/tree/README.md)                 |      WIP          |    |
-| 12   | [BST](src/main/java/surya/practice/geeks/bst/README.md)                   |                |    |
-| 13   | [Heap](src/main/java/surya/practice/geeks/heap/README.md)                 |                |    |
-| 14   | [Graph](src/main/java/surya/practice/geeks/graph/README.md)               |                |    |
-| 15   | [Greedy](src/main/java/surya/practice/geeks/greedy/README.md)             |                |    |
-| 16   | [BackTracking](src/main/java/surya/practice/geeks/backtracking/README.md) |                |    |
-| 17   | [DP](src/main/java/surya/practice/geeks/dp/README.md)                     |                |    |
-| 18   | [Trie](src/main/java/surya/practice/geeks/trie/README.md)                 |                |    |
-| 19   | [SegmentTree](src/main/java/surya/practice/geeks/segmentTree/README.md)                   | |    |
-| 20   | [DisjointSet](src/main/java/surya/practice/geeks/disjointSet/README.md)   |                |    |
+| 1    | [Arrays](src/main/java/surya/practice/geeks/arrays)             | It never ends! |    |
+| 2    | [BitMagic](src/main/java/surya/practice/geeks/bitmagic)         | Almost Complete        |    |
+| 3    | [Matrix](src/main/java/surya/practice/geeks/matrix)             | Still some to solve             |    |
+| 4    | [Searching](src/main/java/surya/practice/geeks/searching)       | WIP            |    |
+| 5    | [Sorting](src/main/java/surya/practice/geeks/sorting)           | Delayed             |    |
+| 6    | [Hashing](src/main/java/surya/practice/geeks/hashing)           | WIP            |    |
+| 7    | [Strings](src/main/java/surya/practice/geeks/strings)           |                |    |
+| 8    | [LinkedList](src/main/java/surya/practice/geeks/linkedList)     |   WIP        |    |
+| 9    | [Stack](src/main/java/surya/practice/geeks/stack)               |                |    |
+| 10   | [Queue](src/main/java/surya/practice/geeks/queue)               |                |    |
+| 11   | [Tree](src/main/java/surya/practice/geeks/tree)                 |      WIP          |    |
+| 12   | [BST](src/main/java/surya/practice/geeks/bst)                   |                |    |
+| 13   | [Heap](src/main/java/surya/practice/geeks/heap)                 |                |    |
+| 14   | [Graph](src/main/java/surya/practice/geeks/graph)               |                |    |
+| 15   | [Greedy](src/main/java/surya/practice/geeks/greedy)             |                |    |
+| 16   | [BackTracking](src/main/java/surya/practice/geeks/backtracking) |                |    |
+| 17   | [DP](src/main/java/surya/practice/geeks/dp)                     |                |    |
+| 18   | [Trie](src/main/java/surya/practice/geeks/trie)                 |                |    |
+| 19   | [SegmentTree](src/main/java/surya/practice/geeks/segmentTree)                   | |    |
+| 20   | [DisjointSet](src/main/java/surya/practice/geeks/disjointSet)   |                |    |
 
 
 [Other Useful links](https://leetcode.com/discuss/general-discussion/494279/comprehensive-data-structure-and-algorithm-study-guide) - Abdul Bari's Algorithm videos for Recursion
