@@ -3,6 +3,7 @@
 
 ### Theory
 
+[Tests](../../../../../../test/java/surya/practice/geeks/tree)
 [Types of Binary Trees](TypesOfBinaryTrees.MD)
 
 |S.No| Problem | Difficulty | Solved | NeedRevision?  | Comments/Algorithms/Tags  |
