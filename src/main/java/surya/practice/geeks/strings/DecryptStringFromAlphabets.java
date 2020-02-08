@@ -6,7 +6,7 @@ public class DecryptStringFromAlphabets {
     /**
      *
      * ----------PROBLEM STATEMENT-----------
-     *1309. Decrypt String from Alphabet to Integer Mapping
+     *LC1309. Decrypt String from Alphabet to Integer Mapping
      * Easy
      *
      * Given a string s formed by digits ('0' - '9') and '#' . We want to map s to English lowercase characters as follows:
