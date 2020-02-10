@@ -48,7 +48,7 @@ public class RunLengthEncoding {
      * ----------
      * ALGORITHM
      * ----------
-     * 1. Precompute the size of result rather than using arraylist and array copy
+     * 1. Pre-compute the size of result rather than using arrayList and array copy
      * =========================
      * Time Complexity - O()
      * Space Complexity - O()
