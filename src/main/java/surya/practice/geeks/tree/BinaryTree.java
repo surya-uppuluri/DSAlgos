@@ -55,7 +55,7 @@ public class BinaryTree {
         return stringBuffer.toString();
     }
 
-    public String levelOrderTraversal(Node root) {
+    public String levelOrderTraversalIterative(Node root) {
         StringBuffer stringBuffer = new StringBuffer();
         Queue<Node> queue = new LinkedList<>();
         queue.add(root);
@@ -164,7 +164,7 @@ public class BinaryTree {
 
     public int getSizeTailRecursively(Node root, int i) {
         if (root == null) return 0;
-//TODO - Have to finish this
+        //TODO - Have to finish this
         return 0;
     }
 
@@ -177,5 +177,27 @@ public class BinaryTree {
     public int getHeightOfTree(Node root) {
         if (root == null) return 0;
         else return Math.max(getHeightOfTree(root.left), getHeightOfTree(root.right)) + 1;
+    }
+
+    public void levelOrderTraversalRecursive(Node root) {
+
+        //1.find height
+        //2. for all levels in height, print each level
+
+        int height = getHeightOfTree(root);
+        System.out.println("Height is:" + height);
+        for (int i = 0; i <= height; i++) {
+            printGivenLevel(root, i);
+        }
+
+    }
+
+    private void printGivenLevel(Node root, int level) {
+        if (root == null) return;
+        if (level == 1) System.out.print(root.data + " ");
+        else {
+            printGivenLevel(root.left, level - 1);
+            printGivenLevel(root.right, level - 1);
+        }
     }
 }

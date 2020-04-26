@@ -39,11 +39,20 @@ class BinaryTreeTest {
 
     @Test
     @DisplayName(" Level-order traversal of Binary Tree - Positive Test")
-    void levelOrderTraversal() {
+    void levelOrderTraversalIterative() {
         Node root = getABinaryTreeWithSize5();
         BinaryTree binaryTree = new BinaryTree();
-        String traversal = binaryTree.levelOrderTraversal(root);
+        String traversal = binaryTree.levelOrderTraversalIterative(root);
         assertEquals("10 20 30 40 50 ", traversal);
+    }
+
+    @Test
+    @DisplayName(" Level-order traversal of Binary Tree - Positive Test")
+    void levelOrderTraversalRecursive() {
+        Node root = getABinaryTreeWithSize5();
+        BinaryTree binaryTree = new BinaryTree();
+        binaryTree.levelOrderTraversalRecursive(root);
+        //assertEquals("10 20 30 40 50 ", traversal);
     }
 
 
