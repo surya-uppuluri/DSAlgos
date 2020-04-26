@@ -1,13 +1,13 @@
 package surya.practice.geeks.tree;
 
-public class Node<T> {
+class Node{
+    int data;
     Node left;
     Node right;
-    T data;
-
-    Node(T data) {
-        this.data=data;
+    Node(int data){
+        this.data = data;
+        left=null;
+        right=null;
     }
 }
-
 

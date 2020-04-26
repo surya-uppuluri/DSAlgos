@@ -3,7 +3,13 @@
 
 
  |S.No| Problem | Difficulty | Solved | NeedRevision?  | Comments/Algorithms/Tags  |
- |---|---|---|---|---|---|
+ |---|---|---|---|---|---|![]![]
+ [Abdul Bari's Lecture](https://www.youtube.com/watch?v=wU6udHRIkcc)
+ 
+ 
+ Find cycle example:
+ (.README_images/29e44569.png)
+ 
   | 1 | | | | | |
   | 2| | | | | |
   | 3 | | | | | |

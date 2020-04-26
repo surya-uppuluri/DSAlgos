@@ -13,7 +13,6 @@ public interface MyQueue<T> {
 
     T getFront() throws QueueEmptyException;
 
-
     T getRear() throws QueueEmptyException;
 
     Integer size();

@@ -1,6 +1,14 @@
 ## Queue
 
+###Intro:
 
+*Operations on Queue:* Mainly the following four basic operations are performed on queue:
+1. Enqueue: Adds an item to the queue. If the queue is full, then it is said to be an Overflow condition.
+2. Dequeue: Removes an item from the queue. The items are popped in the same order in which they are pushed. If the queue is empty, then it is said to be an Underflow condition.
+3. Front: Get the front item from queue.
+4. Rear: Get the last item from queue.
+
+![](.README_images/queue.png)
 
  |S.No| Problem | Difficulty | Solved | NeedRevision?  | Comments/Algorithms/Tags  |
  |---|---|---|---|---|---|

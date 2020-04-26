@@ -59,14 +59,14 @@ public class BinaryTree {
         StringBuffer stringBuffer = new StringBuffer();
         Queue<Node> queue = new LinkedList<>();
         queue.add(root);
-        while (queue.isEmpty() == false) {
+        while (!queue.isEmpty()) {
             Node curr = queue.poll();
             if (curr.left != null)
                 queue.add(curr.left);
             if (curr.right != null)
                 queue.add(curr.right);
             System.out.print(curr.data + " ");
-            stringBuffer.append(curr.data + " ");
+            stringBuffer.append(curr.data).append(" ");
         }
         return stringBuffer.toString();
     }

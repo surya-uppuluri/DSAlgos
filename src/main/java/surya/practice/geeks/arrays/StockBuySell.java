@@ -1,7 +1,9 @@
 package surya.practice.geeks.arrays;
 
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
 
 class StockBuySell {
 
@@ -37,7 +39,6 @@ class Stock {
 
         int i = 0;
         int count = 0;
-        int buy = 0, sell = 0;
         ArrayList<Interval> list = new ArrayList<>();
         while (i < n - 1) {
             Interval interval = new Interval();
@@ -67,8 +68,7 @@ class Stock {
 
 
         if (count > 0) {
-            for(Interval inte: list)
-            {
+            for (Interval inte : list) {
                 System.out.print("(" + inte.buy + " " + inte.sell + ") ");
 
             }

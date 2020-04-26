@@ -19,8 +19,6 @@ public class MyStack<T> {
         list.add(data);
         System.out.println(list.toString());
         top = list.size();
-//        System.out.println("element at top is: " + list.get(top - 1));
-
     }
 
     public T peek() {

@@ -1,6 +1,7 @@
 package surya.practice.geeks.searching;
 
 import org.junit.jupiter.api.Test;
+import surya.practice.searching.PackageNameShortener;
 
 import static org.junit.jupiter.api.Assertions.*;
 
