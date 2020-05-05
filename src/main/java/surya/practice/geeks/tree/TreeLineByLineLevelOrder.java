@@ -50,7 +50,7 @@ import java.util.Queue;
  *//*
 Runtime: 1 ms, faster than 56.29% of Java online submissions for Binary Tree Level Order Traversal.
         Memory Usage: 39.7 MB, less than 5.33% of Java online submissions for Binary Tree Level Order Traversal.*/
-class Solution {
+class LineByLinePrint {
     public List<List<Integer>> levelOrderWithIntMinAsDelimiter(TreeNode root) {
 
         List result = new ArrayList<>();
@@ -216,9 +216,9 @@ public class TreeLineByLineLevelOrder {
         while ((line = in.readLine()) != null) {
             TreeNode root = stringToTreeNode(line);
 
-            List<List<Integer>> withIntMinAsDelimiter = new Solution().levelOrderWithIntMinAsDelimiter(root);
-            List<List<Integer>> withOutADelimiter = new Solution().levelOrderWithoutDelimiter(root);
-            List<List<Integer>> withClassicLevelOrder = new Solution().withClassicLevelOrder(root);
+            List<List<Integer>> withIntMinAsDelimiter = new LineByLinePrint().levelOrderWithIntMinAsDelimiter(root);
+            List<List<Integer>> withOutADelimiter = new LineByLinePrint().levelOrderWithoutDelimiter(root);
+            List<List<Integer>> withClassicLevelOrder = new LineByLinePrint().withClassicLevelOrder(root);
 
             String outWithIntMinAsDelimiter = int2dListToString(withIntMinAsDelimiter);
             String outwithOutADelimiter = int2dListToString(withOutADelimiter);

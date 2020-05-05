@@ -186,7 +186,7 @@ public class BinaryTree {
 
         int height = getHeightOfTree(root);
         System.out.println("Height is:" + height);
-        for (int i = 0; i <= height; i++) {
+        for (int i = 1; i <= height; i++) {
             printGivenLevel(root, i);
         }
 
