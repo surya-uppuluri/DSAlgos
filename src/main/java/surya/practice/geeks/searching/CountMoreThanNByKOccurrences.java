@@ -1,12 +1,7 @@
 package surya.practice.geeks.searching;
 
 
-import surya.practice.geeks.sorting.Bubble;
-
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 //@formatter:off
@@ -122,7 +117,7 @@ public class CountMoreThanNByKOccurrences {
     private static int getCountBySorting(int threshold, int[] arr) {
         int res = 0;
         int freq = 1; // frequency is already 1 when you traverse any element
-        Bubble.sort(arr);
+        Arrays.sort(arr);
         for (int i = 0; i < arr.length - 1; i++) {
             if (arr[i] == arr[i + 1])
                 freq = freq + 1;

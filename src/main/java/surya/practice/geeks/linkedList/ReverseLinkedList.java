@@ -1,5 +1,8 @@
 package surya.practice.geeks.linkedList;
 
+import org.jetbrains.annotations.NotNull;
+
+@SuppressWarnings("ALL")
 public class ReverseLinkedList<T> {
 
     //@formatter:off
@@ -100,9 +103,9 @@ public class ReverseLinkedList<T> {
         return singleLinkedList;
     }
 
-    public SingleLinkedList reverseRecursively(SingleLinkedList singleLinkedList) {
-         singleLinkedList.setHead(reverseRec(singleLinkedList.getHead()));
-         return singleLinkedList;
+    public SingleLinkedList reverseRecursively(@NotNull SingleLinkedList singleLinkedList) {
+        singleLinkedList.setHead(reverseRec(singleLinkedList.getHead()));
+        return singleLinkedList;
     }
 
     private Node reverseRec(Node head) {
