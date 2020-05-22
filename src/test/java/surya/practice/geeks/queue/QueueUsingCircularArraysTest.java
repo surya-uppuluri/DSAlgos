@@ -10,12 +10,12 @@ class QueueUsingCircularArraysTest {
 
     @Test
     void isFull() {
-        assertTrue(queueUsingCircularArrays.isFull());
+        assertFalse(queueUsingCircularArrays.isFull());
     }
 
     @Test
     void isEmpty() {
-        assert (queueUsingCircularArrays.isEmpty());
+        assertTrue(queueUsingCircularArrays.isEmpty());
     }
 
     @Test

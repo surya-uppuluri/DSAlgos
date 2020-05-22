@@ -128,7 +128,7 @@ public class BinaryTree {
     public String levelOrderTraversalLineByLineUsingTwoLoops(Node root) {
         Queue<Node> queue = new LinkedList<>();
         queue.add(root);
-        while (queue.isEmpty() == false) {
+        while (!queue.isEmpty()) {
             int count = queue.size();
             for (int i = 0; i < count; i++) {
                 Node curr = queue.poll();
