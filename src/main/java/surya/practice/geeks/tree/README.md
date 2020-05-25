@@ -8,7 +8,7 @@
 
 |S.No| Problem | Difficulty | Solved | NeedRevision?  | Comments/Algorithms/Tags  |
  |---|---|---|---|---|---|
-  | 1 | [BoundaryTraversalOfTree](src/main/java/surya/practice/geeks/tree/BoundaryTraversalOfTree.java) [Test](src/test/java/surya/practice/geeks/tree/BoundaryTraversalOfTreeTest.java) | Medium | Yes | No |  Traversal of the tree in bottom up in right tree |
+  | 1 | [BoundaryTraversalOfTree](BoundaryTraversalOfTree.java) [Test](../../../../../../test/java/surya/practice/geeks/tree/BoundaryTraversalOfTreeTest.java) | Medium | Yes | No |  Traversal of the tree in bottom up in right tree |
   | 2| | | | | |
   | 3 | | | | | |
   | 4 | | | | | |
