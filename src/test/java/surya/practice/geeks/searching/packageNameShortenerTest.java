@@ -9,7 +9,7 @@ class PackageNameShortenerTest {
     @Test
     void shortenTheName() {
         PackageNameShortener packageNameShortener = new PackageNameShortener();
-        String shortenedName = packageNameShortener.shortenTheNameUsingJavaSplit("com.organization.teamName.application");
+        String shortenedName = packageNameShortener.shortenTheNameUsingSplit("com.organization.teamName.application");
         assertEquals("c.o.t.application", shortenedName);
     }
 }

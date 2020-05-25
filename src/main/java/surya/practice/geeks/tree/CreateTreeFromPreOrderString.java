@@ -3,7 +3,7 @@ package surya.practice.geeks.tree;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class CreateTreeFromString {
+public class CreateTreeFromPreOrderString {
 
     public Node createTree(String s) {
         String[] nodes = s.split(" ");

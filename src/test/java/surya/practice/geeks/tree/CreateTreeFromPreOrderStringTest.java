@@ -2,13 +2,13 @@ package surya.practice.geeks.tree;
 
 import org.junit.jupiter.api.Test;
 
-class CreateTreeFromStringTest {
+class CreateTreeFromPreOrderStringTest {
 
     @Test
     void createTree() {
 
-        CreateTreeFromString createTreeFromString = new CreateTreeFromString();
-        System.out.println(inOrder(createTreeFromString.createTree("1 2 3 N N 4 6 N 5 N N 7 N"), ""));
+        CreateTreeFromPreOrderString createTreeFromPreOrderString = new CreateTreeFromPreOrderString();
+        System.out.println(inOrder(createTreeFromPreOrderString.createTree("1 2 3 N N 4 6 N 5 N N 7 N"), ""));
     }
 
     private String inOrder(Node node, String resp) {

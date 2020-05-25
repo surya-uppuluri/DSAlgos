@@ -56,7 +56,7 @@ public class BinaryTree {
     }
 
     public String levelOrderTraversalIterative(Node root) {
-        StringBuffer stringBuffer = new StringBuffer();
+        StringBuilder stringBuilder = new StringBuilder();
         Queue<Node> queue = new LinkedList<>();
         queue.add(root);
         while (!queue.isEmpty()) {
@@ -66,9 +66,9 @@ public class BinaryTree {
             if (curr.right != null)
                 queue.add(curr.right);
             System.out.print(curr.val + " ");
-            stringBuffer.append(curr.val).append(" ");
+            stringBuilder.append(curr.val).append(" ");
         }
-        return stringBuffer.toString();
+        return stringBuilder.toString();
     }
 
 

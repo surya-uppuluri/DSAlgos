@@ -3,7 +3,7 @@ package surya.practice.geeks.searching;
 public class PackageNameShortener {
 
 
-    public String shortenTheNameUsingJavaSplit(String packageName) {
+    public String shortenTheNameUsingSplit(String packageName) {
         //com.group.team.application -> c.g.t.application
         StringBuilder response = new StringBuilder();
         String[] subpackageNames = packageName.split("\\.");
