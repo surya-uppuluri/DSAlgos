@@ -10,7 +10,7 @@
 
 ![](.README_images/queue.png)
 
- |S.No| Problem | Difficulty | Solved | NeedRevision?  | Comments/Algorithms/Tags  |
+ |S.No| Problem | Difficulty | Solved | Rethink?  | Comments/Algorithms/Tags  |
  |---|---|---|---|---|---|
   | 1 | Queue Using Circular Array Concept for O(1) on Dequeue | Basic |  Yes | No | Better than queue with normal array that takes O(n) for dequeue [Swaps]|
   | 2| | | | | |

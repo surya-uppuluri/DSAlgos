@@ -3,7 +3,7 @@
 * [Notes on Theory of Hashing](Hashing_Theory.pdf)
 
 
- |S.No| Problem | Difficulty | Solved | NeedRevision?  | Comments/Algorithms/Tags  |
+ |S.No| Problem | Difficulty | Solved | Rethink?  | Comments/Algorithms/Tags  |
  |---|---|---|---|---|---|
   | 1 | | | | | |
   | 2| | | | | |

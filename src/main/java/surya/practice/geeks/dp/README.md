@@ -4,13 +4,16 @@
 
 ## Advantages:
 1. Avoiding repetition of same step
+
 ![](.README_images/Repetetion.png)
+
 2. Improve performance due to step1
+
 ![](.README_images/performance.png)
 
- |S.No| Problem | Difficulty | Solved | NeedRevision?  | Comments/Algorithms/Tags  |
+ |S.No| Problem | Difficulty | Solved | Rethink?  | Comments/Algorithms/Tags  |
  |---|---|---|---|---|---|
-  | 1 |  | | | | |
+  | 1 | [ClimbingStairs](ClimbingStairs.java)  | | | | |
   | 2| | | | | |
   | 3 | | | | | |
   | 4 | | | | | |

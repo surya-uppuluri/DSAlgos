@@ -2,7 +2,7 @@
 
 
 
- |S.No| Problem | Difficulty | Solved | NeedRevision?  | Comments/Algorithms/Tags  |
+ |S.No| Problem | Difficulty | Solved | Rethink?  | Comments/Algorithms/Tags  |
  |---|---|---|---|---|---|![]![]
  [Abdul Bari's Lecture](https://www.youtube.com/watch?v=wU6udHRIkcc)
  

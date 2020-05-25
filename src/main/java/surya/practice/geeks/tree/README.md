@@ -6,7 +6,7 @@
 [Tests](../../../../../../test/java/surya/practice/geeks/tree)
 [Types of Binary Trees](TypesOfBinaryTrees.MD)
 
-|S.No| Problem | Difficulty | Solved | NeedRevision?  | Comments/Algorithms/Tags  |
+|S.No| Problem | Difficulty | Solved | Rethink?  | Comments/Algorithms/Tags  |
  |---|---|---|---|---|---|
   | 1 | [BoundaryTraversalOfTree](BoundaryTraversalOfTree.java) [Test](../../../../../../test/java/surya/practice/geeks/tree/BoundaryTraversalOfTreeTest.java) | Medium | Yes | No |  Traversal of the tree in bottom up in right tree |
   | 2| | | | | |

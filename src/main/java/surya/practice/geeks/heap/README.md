@@ -4,7 +4,7 @@
 
 [Min Heap](MinHeap.MD)
 
-| S.No | Problem                                                               | Difficulty | Solved | NeedRevision? | Comments/Algorithms/Tags |
+| S.No | Problem                                                               | Difficulty | Solved | Rethink? | Comments/Algorithms/Tags |
 |:-----|:----------------------------------------------------------------------|:-----------|:-------|:--------------|:-------------------------|
 | 1    | [MinHeapWithArrays.java: Lines 3-163](MinHeapWithArrays.java#L3-L163) | Medium     | Basic  | Yes           | Complete Binary Tree     |
 | 2    |                                                                       |            |        |               |                          |
