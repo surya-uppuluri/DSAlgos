@@ -7,6 +7,7 @@
 ![](.README_images/Repetetion.png)
 2. Improve performance due to step1
 ![](.README_images/performance.png)
+
  |S.No| Problem | Difficulty | Solved | NeedRevision?  | Comments/Algorithms/Tags  |
  |---|---|---|---|---|---|
   | 1 |  | | | | |
