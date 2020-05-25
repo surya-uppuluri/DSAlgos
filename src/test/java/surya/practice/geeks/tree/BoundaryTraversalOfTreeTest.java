@@ -28,7 +28,6 @@ class BoundaryTraversalOfTreeTest {
         BoundaryTraversalOfTree binaryTree = new BoundaryTraversalOfTree();
         Node root = getABinaryTreeFromInputString();
         log.info("The levelOrderTraversal of input tree is: {}", new BinaryTree().levelOrderTraversalLineByLine(root));
-        //**======== 10 20 40 60 100 80 110 90 50 30 ========== **//
         assertEquals("[10, 20, 40, 70, 80, 110, 120, 100, 60, 30]", Arrays.toString(binaryTree.solve(root)));
     }
 
