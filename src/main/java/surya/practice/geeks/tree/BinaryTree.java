@@ -25,7 +25,7 @@ public class BinaryTree {
 
         if (root != null) {
             inOrderTraversal(root.left);
-            stringBuffer.append(root.data).append(" ");
+            stringBuffer.append(root.val).append(" ");
             System.out.println("Current in-order tree traversal: " + stringBuffer);
             inOrderTraversal(root.right);
         }
@@ -35,7 +35,7 @@ public class BinaryTree {
 
     public String preOrderTraversal(Node root) {
         if (root != null) {
-            stringBuffer.append(root.data).append(" ");
+            stringBuffer.append(root.val).append(" ");
             System.out.println("Current pre-order tree traversal: " + stringBuffer);
             preOrderTraversal(root.left);
             preOrderTraversal(root.right);
@@ -48,7 +48,7 @@ public class BinaryTree {
         if (root != null) {
             postOrderTraversal(root.left);
             postOrderTraversal(root.right);
-            stringBuffer.append(root.data).append(" ");
+            stringBuffer.append(root.val).append(" ");
             System.out.println("Current post-order tree traversal: " + stringBuffer);
         }
 
@@ -65,8 +65,8 @@ public class BinaryTree {
                 queue.add(curr.left);
             if (curr.right != null)
                 queue.add(curr.right);
-            System.out.print(curr.data + " ");
-            stringBuffer.append(curr.data).append(" ");
+            System.out.print(curr.val + " ");
+            stringBuffer.append(curr.val).append(" ");
         }
         return stringBuffer.toString();
     }
@@ -102,7 +102,7 @@ public class BinaryTree {
                 continue;
             }
 //            System.out.println(curr.data);
-            stringBuffer.append(curr.data).append(" ");
+            stringBuffer.append(curr.val).append(" ");
             if (curr.left != null) queue.add(curr.left);
             if (curr.right != null) queue.add(curr.right);
 
@@ -132,8 +132,8 @@ public class BinaryTree {
             int count = queue.size();
             for (int i = 0; i < count; i++) {
                 Node curr = queue.poll();
-                System.out.print(curr.data + " ");
-                stringBuffer.append(curr.data + " ");
+                System.out.print(curr.val + " ");
+                stringBuffer.append(curr.val + " ");
                 if (curr.left != null) queue.add(curr.left);
                 if (curr.right != null) queue.add(curr.right);
             }
@@ -171,7 +171,7 @@ public class BinaryTree {
     public int getMaxFromTree(Node root) {
         if (root == null) return Integer.MIN_VALUE;
         else
-            return Math.max((Integer) root.data, Math.max(getMaxFromTree(root.left), getMaxFromTree(root.right)));
+            return Math.max((Integer) root.val, Math.max(getMaxFromTree(root.left), getMaxFromTree(root.right)));
     }
 
     public int getHeightOfTree(Node root) {
@@ -194,7 +194,7 @@ public class BinaryTree {
 
     private void printGivenLevel(Node root, int level) {
         if (root == null) return;
-        if (level == 1) System.out.print(root.data + " ");
+        if (level == 1) System.out.print(root.val + " ");
         else {
             printGivenLevel(root.left, level - 1);
             printGivenLevel(root.right, level - 1);

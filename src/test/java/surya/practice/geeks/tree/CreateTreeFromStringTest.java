@@ -13,8 +13,8 @@ class CreateTreeFromStringTest {
 
     private String inOrder(Node node, String resp) {
         if (node == null) return resp;
-        inOrder(node.left, resp+" "+node.data);
-        inOrder(node.right, resp+" "+node.data);
+        inOrder(node.left, resp+" "+node.val);
+        inOrder(node.right, resp+" "+node.val);
 
         return resp;
     }

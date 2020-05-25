@@ -11,7 +11,7 @@ public class PrintLeftView {
             return;
         }
         if (max_level < level) {
-            System.out.print(" " + node.data);
+            System.out.print(" " + node.val);
             max_level = level;
         }
 
