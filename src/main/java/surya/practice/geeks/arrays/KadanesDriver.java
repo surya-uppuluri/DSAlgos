@@ -1,5 +1,7 @@
 package surya.practice.geeks.arrays;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -14,7 +16,7 @@ import java.io.InputStreamReader;
  * Print the maximum sum of the contiguous sub-array in a separate line for each test case.
  * <p>
  * User Task:
- * The task is to complete the function maxSubarraySum() which finds subarray with maximum sum.
+ * The task is to complete the function maxSubArraySum() which finds subarray with maximum sum.
  * <p>
  * Constraints:
  * 1 ≤ T ≤ 110
@@ -43,15 +45,15 @@ class KadanesDriver {
         int t = Integer.parseInt(br.readLine().trim()); //Inputting the testcases
         while (t-- > 0) {
             int n = Integer.parseInt(br.readLine().trim());
-            int arr[] = new int[n];
-            String inputLine[] = br.readLine().trim().split(" ");
+            int[] arr = new int[n];
+            String[] inputLine = br.readLine().trim().split(" ");
             for (int i = 0; i < n; i++) {
                 arr[i] = Integer.parseInt(inputLine[i]);
             }
 
             Kadane obj = new Kadane();
 
-            System.out.println(obj.maxSubarraySum(arr, n));
+            System.out.println(obj.maxSubArraySum(arr, n));
         }
     }
 }
@@ -59,7 +61,7 @@ class KadanesDriver {
 
 class Kadane {
 
-    int maxSubarraySum(int arr[], int n) {
+    int maxSubArraySum(@NotNull int[] arr, int n) {
 
         int max_cur = arr[0];
         int max_global = arr[0];
