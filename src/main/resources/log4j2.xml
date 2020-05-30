@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+<Appenders>
+  <Console name="Console" target="SYSTEM_OUT">
+    <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %logger{36} - %msg%n"/>
+  </Console>
+  <Console name="SlowConsole" target="SYSTEM_OUT">
+    <PatternLayout pattern="%highlight{${LOG_LEVEL_PATTERN:-%5p}}{FATAL=red blink, ERROR=red, WARN=yellow bold, INFO=green, DEBUG=green bold, TRACE=blue} [%5.5t] %style{%-15.30C{1.}}{cyan} : %m%n"/>
+  </Console>
+  <File name="File" fileName="./logOutput.txt">
+    <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %logger{36} - %msg%n" />
+  </File>
+</Appenders>
+<Loggers>
+  <logger name="surya.practice" level="ALL" additivity="false">
+    <!--Log4j for the WEB MODULE -->
+    <appender-ref ref="SlowConsole"/>
+  </logger>
+  <Root level="ERROR">
+    <AppenderRef ref="Console"/>
+    <AppenderRef ref="File" />
+  </Root>
+</Loggers>
+</Configuration>

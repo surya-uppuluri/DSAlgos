@@ -112,7 +112,7 @@ class LC1441_BuildAnArrayWithStackOperations {
     final String PUSH = "Push";
     final String POP = "Pop";
     List<String> res = new ArrayList<>();
-    Stack<Integer> stack = new Stack();
+    Stack<Integer> stack = new Stack<>();
     /* Since stack is LIFO, I will push the elements in reverse order so that 1 comes on top */
     for (int i = n; i >= 1; i--) {
       stack.push(i);
