@@ -5,7 +5,7 @@
 
  |S.No| Problem | Difficulty | Solved | Rethink?  | Comments/Algorithms/Tags  |
  |---|---|---|---|---|---|
-  | 1 | | | | | |
+  | 1 | [LRUCache](LC146_LRUCache_DLL_HM.java) | Easy | yes |  No | Better implemented using LinkedHashMap |
   | 2| | | | | |
   | 3 | | | | | |
   | 4 | | | | | |

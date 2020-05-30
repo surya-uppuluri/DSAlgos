@@ -7,7 +7,11 @@ import java.util.HashMap;
  * corner cases in terms of head and tail during put and get
  */
 
-public class LC_146LRUCache_DLL_HM {
+/**
+ * Runtime: 28 ms, faster than 21.88% of Java online submissions for LRU Cache.
+ * Memory Usage: 57.5 MB, less than 61.35% of Java online submissions for LRU Cache.
+ */
+public class LC146_LRUCache_DLL_HM {
 
   Node head, tail;
   int capacity;
@@ -26,7 +30,7 @@ public class LC_146LRUCache_DLL_HM {
     }
   }
 
-  public LC_146LRUCache_DLL_HM(int capacity) {
+  public LC146_LRUCache_DLL_HM(int capacity) {
 
     map = new HashMap<>();
     this.capacity = capacity;

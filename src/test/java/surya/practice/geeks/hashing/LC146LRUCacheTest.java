@@ -4,9 +4,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-class LC_146LRUCache_DLL_HMTest {
+class LC146LRUCacheTest {
 
-  LC_146LRUCache_DLL_HM cache = new LC_146LRUCache_DLL_HM(2);
+  LC146_LRUCache cache = new LC146_LRUCache(2);
 
   @Test
   void get() {
@@ -20,5 +20,4 @@ class LC_146LRUCache_DLL_HMTest {
     assertEquals(3, cache.get(3));        // returns 3
     assertEquals(4, cache.get(4));         // returns 4
   }
-
 }
