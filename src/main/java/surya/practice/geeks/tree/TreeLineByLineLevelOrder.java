@@ -56,7 +56,7 @@ class LineByLinePrint {
         List result = new ArrayList<>();
         if (root == null) return new ArrayList<>(new ArrayList<>());
 
-        Queue<TreeNode> q = new LinkedList();
+        Queue<TreeNode> q = new LinkedList<>();
         q.add(root);
         q.add(new TreeNode(Integer.MIN_VALUE));
         while (!q.isEmpty() && q.peek().val != Integer.MIN_VALUE) {
@@ -116,11 +116,11 @@ class LineByLinePrint {
      */
     public List<List<Integer>> withClassicLevelOrder(TreeNode root) {
 
-        if (root == null) return new ArrayList<>(new ArrayList());
+        if (root == null) return new ArrayList<>(new ArrayList<>());
 
         List<List<Integer>> res = new ArrayList<>();
 
-        Queue<TreeNode> queue = new LinkedList();
+        Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
         while (!queue.isEmpty()) {
             int size = queue.size();

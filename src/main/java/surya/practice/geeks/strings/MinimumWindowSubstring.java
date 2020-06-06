@@ -1,94 +1,59 @@
 package surya.practice.geeks.strings;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class MinimumWindowSubstring {
 
-    public static void main(String[] args) {
-        MinimumWindowSubstring minimumWindowSubstring = new MinimumWindowSubstring();
-        System.out.println(minimumWindowSubstring.minWindow("SuryaUppuluri", "yuri"));
+  public static void main(String[] args) {
+    MinimumWindowSubstring minimumWindowSubstring = new MinimumWindowSubstring();
+    System.out.println(minimumWindowSubstring.minWindow("SuryaUppuluri", "yuri"));
+  }
+
+  public String minWindow(String s, String t) {
+
+    HashMap<Character, Integer> needs = new HashMap<Character, Integer>();
+    HashMap<Character, Integer> window = new HashMap<Character, Integer>();
+
+    for (Character ch : t.toCharArray()) {
+      needs.put(ch, needs.getOrDefault(ch, 0) + 1);
     }
+    int right = 0, left = 0;
+    int start = 0, minLen = Integer.MAX_VALUE;
 
-    public String minWindow(String wholeString, String toFind) {
-        Map<Character, Integer> requiredCharacters = buildMappingOfCharactersToOccurrences(toFind);
-        Map<Character, Integer> windowCharacterMapping = new HashMap<>();
+    int match = 0;
+    while (right < s.length()) {
+      char c1 = s.charAt(right);
+      if (needs.containsKey(c1)) {
+        window.put(c1, window.getOrDefault(c1, 0) + 1);
+        if (window.get(c1).equals(needs.get(c1))) {
+          match++;
+        }
+      }
+      right++;
 
-        int left = 0;
-        int right = 0;
-
-        int totalCharFrequenciesToMatch = requiredCharacters.size();
-        int charFrequenciesInWindowThatMatch = 0;
-
-        int minWindowLengthSeenSoFar = Integer.MAX_VALUE;
-        String minWindow = "";
-
-        while (right < wholeString.length()) {
-            char characterAtRightPointer = wholeString.charAt(right);
-            addCharacterToHashtableMapping(windowCharacterMapping, characterAtRightPointer);
-
-            boolean rightCharIsARequirement = requiredCharacters.containsKey(characterAtRightPointer);
-            if (rightCharIsARequirement) {
-                boolean requirementForCharacterMet =
-                        requiredCharacters.get(characterAtRightPointer).intValue() ==
-                                windowCharacterMapping.get(characterAtRightPointer).intValue();
-
-                if (requirementForCharacterMet) {
-                    charFrequenciesInWindowThatMatch++;
-                }
-            }
-
-            while (charFrequenciesInWindowThatMatch == totalCharFrequenciesToMatch && left <= right) {
-                char characterAtLeftPointer = wholeString.charAt(left);
-                int windowSize = right - left + 1;
-
-                if (windowSize < minWindowLengthSeenSoFar) {
-                    minWindowLengthSeenSoFar = windowSize;
-                    minWindow = wholeString.substring(left, right + 1);
-                }
-
-                windowCharacterMapping.put(
-                        characterAtLeftPointer,
-                        windowCharacterMapping.get(characterAtLeftPointer) - 1
-                );
-
-                boolean leftCharIsARequirement = requiredCharacters.containsKey(characterAtLeftPointer);
-                if (leftCharIsARequirement) {
-                    boolean characterFailsRequirement =
-                            windowCharacterMapping.get(characterAtLeftPointer) <
-                                    requiredCharacters.get(characterAtLeftPointer);
-
-                    if (characterFailsRequirement) {
-                        charFrequenciesInWindowThatMatch--;
-                    }
-                }
-
-                left++;
-            }
-
-            right++;
+      while (match == needs.size()) {
+        if (right - left < minLen) {
+          start = left;
+          minLen = right - left;
         }
 
-        return minWindow;
-    }
+        char c2 = s.charAt(left);
+        //if you are moving left pointer by 1, you have to decrement it's count in the window
+        if (needs.containsKey(c2)) {
+          window.put(c2, window.get(c2) - 1);
 
-    private Map<Character, Integer> buildMappingOfCharactersToOccurrences(String toFind) {
-        Map<Character, Integer> map = new HashMap<>();
+          //after decrementing if the match doesn't happen, reduce the match count
 
-        for (int i = 0; i < toFind.length(); i++) {
-            int occurrencesOfCharacter = map.getOrDefault(toFind.charAt(i), 0);
-            map.put(toFind.charAt(i), occurrencesOfCharacter + 1);
+          if (window.get(c2) < needs.get(c2)) {
+            match--;
+          }
         }
+        left++;
 
-        return map;
+      }
     }
-
-    private void addCharacterToHashtableMapping(
-            Map<Character, Integer> map,
-            Character c
-    ) {
-        int occurrences = map.getOrDefault(c, 0);
-        map.put(c, occurrences + 1);
-    }
-
+    return minLen == Integer.MAX_VALUE ? "" : s.substring(start, start + minLen);
+  }
 }
+
+

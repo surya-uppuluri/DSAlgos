@@ -126,7 +126,7 @@ public class MinHeapWithArrays {
      * ALGORITHM
      * ----------
      * 1. Check the corner case of overflow. current size shall be always less than maxSize.
-     * 2. Parents shall be having lesser elements than children. So, take care of that restructuring too by swapping.
+     * 2. Parents shall be having elements lesser  than children. So, take care of that restructuring too by swapping.
      * =========================
      * Space Complexity - O()
      * Time Complexity - O()

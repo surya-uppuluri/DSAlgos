@@ -29,7 +29,7 @@ import java.io.InputStreamReader;
  * 5
  * 1 2 3 -2 5
  * 4
- * -1 -2 -3 -4
+ * -1 -2 -3 -4c
  * <p>
  * Output:
  * 9
